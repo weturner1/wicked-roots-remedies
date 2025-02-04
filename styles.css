@@ -9,6 +9,22 @@ body {
     background: #1e1e1e;
     color: #f8f8f8;
 }
+.brand-light {
+    font-family: 'Old Standard TT', serif;
+    font-size: 2.5rem;
+    color: darkmaroon;
+}
+.dark-mode .brand-light {
+    color: gold;
+}
+.brand-dark {
+    font-family: 'Old Standard TT', serif;
+    font-size: 2rem;
+    color: darkmaroon;
+}
+.dark-mode .brand-dark {
+    color: gold;
+}
 .container {
     background: white;
     padding: 20px;
@@ -24,4 +40,36 @@ body {
     background: #333;
     color: #f8f8f8;
     border-color: #777;
+}
+.tip-box {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: auto;
+}
+.dark-mode .tip-box {
+    background: #222;
+}
+.ratio-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #1e1e1e;
+    border: 2px solid black;
+}
+.dark-mode .ratio-container {
+    background: #333;
+    color: #f8f8f8;
+    border-color: #777;
+}
+.result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: darkgreen;
 }
