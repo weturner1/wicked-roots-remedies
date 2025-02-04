@@ -38,6 +38,12 @@ body {
     color: #f8f8f8;
     border-color: #777;
 }
+.ratio-container h2 {
+    color: black;
+}
+.dark-mode .ratio-container h2 {
+    color: white;
+}
 .tip-box {
     background: white;
     padding: 10px;
