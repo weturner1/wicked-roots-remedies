@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
@@ -10,7 +12,7 @@ body {
     color: #f8f8f8;
 }
 .brand-light, .brand-dark {
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Uncial Antiqua', cursive; /* Old Apothecary Style Font */
     font-size: 2.5rem;
     color: maroon;
 }
@@ -35,6 +37,17 @@ body {
     background: #333;
     color: #f8f8f8;
     border-color: #777;
+}
+.tip-box {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 30px auto 40px auto; /* Adds more spacing between tip box and first calculator */
+}
+.dark-mode .tip-box {
+    background: #222;
 }
 .ratio-container {
     background: white;
