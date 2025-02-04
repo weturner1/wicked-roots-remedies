@@ -94,7 +94,7 @@ input, select {
     border-radius: 5px;
 }
 .toggle-dark-mode {
-    width: 80%;
+    max-width: 450px; /* Matches the calculator pane width */
     padding: 10px;
     margin: 10px auto;
     display: block;
