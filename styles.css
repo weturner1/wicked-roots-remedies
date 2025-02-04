@@ -94,8 +94,7 @@ input, select {
     border-radius: 5px;
 }
 .toggle-dark-mode {
-    width: 450px; /* Matches calculator panel width exactly */
-    max-width: 450px;
+    width: 250px; /* Reduced width to align with calculator buttons */
     padding: 10px;
     margin: 10px auto;
     display: block;
