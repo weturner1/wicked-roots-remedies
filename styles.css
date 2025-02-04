@@ -42,7 +42,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 450px;
-    margin: auto;
+    margin: 30px auto 40px auto; /* Adds more spacing between tip box and first calculator */
 }
 .dark-mode .tip-box {
     background: #222;
@@ -92,4 +92,20 @@ input, select {
     margin: 5px 0;
     border: 1px solid black;
     border-radius: 5px;
+}
+.toggle-dark-mode {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.toggle-dark-mode:hover {
+    background-color: #777;
 }
