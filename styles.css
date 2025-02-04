@@ -36,17 +36,6 @@ body {
     color: #f8f8f8;
     border-color: #777;
 }
-.tip-box {
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 450px;
-    margin: 30px auto 40px auto; /* Adds more spacing between tip box and first calculator */
-}
-.dark-mode .tip-box {
-    background: #222;
-}
 .ratio-container {
     background: white;
     padding: 20px;
@@ -63,13 +52,27 @@ body {
     color: #f8f8f8;
     border-color: #777;
 }
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.styled-table th, .styled-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.styled-table th {
+    background-color: #f4f4f4;
+    color: black;
+}
+.dark-mode .styled-table th {
+    background-color: #555;
+    color: white;
+}
 .result {
     font-size: 1.2rem;
     font-weight: bold;
     color: darkgreen;
-}
-.ratio-container table th {
-    color: maroon;
 }
 button {
     background-color: green;
