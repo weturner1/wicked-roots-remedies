@@ -39,10 +39,10 @@ body {
     border-color: #777;
 }
 .ratio-container h2 {
-    color: black;
+    color: maroon; /* Matching the font color of other calculator titles */
 }
 .dark-mode .ratio-container h2 {
-    color: white;
+    color: gold; /* Matching the dark mode styling */
 }
 .tip-box {
     background: white;
