@@ -3,7 +3,7 @@
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
-    background: url('https://www.transparenttextures.com/patterns/antique-paper.png'); /* Aged parchment skin-like texture */
+    background: url('https://www.transparenttextures.com/patterns/old-map.png'); /* Rugged parchment with burn marks and script */
     background-size: cover;
     color: #1e1e1e;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
