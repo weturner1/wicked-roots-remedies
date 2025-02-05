@@ -9,18 +9,30 @@ body {
     color: #1e1e1e;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+/* Logo Styling */
+.brand-logo {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+    display: block;
+    margin: 40px auto 20px auto; /* Centers the logo with spacing */
+}
+
 .dark-mode {
     background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png'); /* Subtle dark texture */
     color: #f8f8f8;
 }
+
 .brand-light, .brand-dark {
     font-family: 'Uncial Antiqua', cursive; /* Old Apothecary Style Font */
     font-size: 2.5rem;
     color: maroon;
 }
+
 .dark-mode .brand-light, .dark-mode .brand-dark {
     color: gold;
 }
+
 .container {
     background: rgba(255, 255, 255, 0.9); /* Slight opacity for depth */
     padding: 20px;
@@ -35,11 +47,13 @@ body {
     flex-direction: column;
     align-items: center; /* Center align content */
 }
+
 .dark-mode .container {
     background: rgba(51, 51, 51, 0.9);
     color: #f8f8f8;
     border-color: #777;
 }
+
 .tip-box {
     background: rgba(255, 255, 255, 0.9);
     padding: 10px;
@@ -49,10 +63,12 @@ body {
     margin: 30px auto 40px auto;
     border: 2px solid maroon;
 }
+
 .dark-mode .tip-box {
     background: rgba(34, 34, 34, 0.9);
     border-color: gold;
 }
+
 .ratio-container {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -64,33 +80,40 @@ body {
     color: #1e1e1e;
     border: 2px solid black;
 }
+
 .dark-mode .ratio-container {
     background: rgba(51, 51, 51, 0.9);
     color: #f8f8f8;
     border-color: #777;
 }
+
 .styled-table {
     width: 100%;
     border-collapse: collapse;
 }
+
 .styled-table th, .styled-table td {
     border: 1px solid black;
     padding: 10px;
     text-align: center;
 }
+
 .styled-table th {
     background-color: #f4f4f4;
     color: black;
 }
+
 .dark-mode .styled-table th {
     background-color: #555;
     color: white;
 }
+
 .result {
     font-size: 1.2rem;
     font-weight: bold;
     color: darkgreen;
 }
+
 button {
     background-color: green;
     color: white;
@@ -103,9 +126,11 @@ button {
     width: 200px;
     text-align: center;
 }
+
 button:hover {
     background-color: darkgreen;
 }
+
 input, select {
     width: 80%;
     padding: 10px;
