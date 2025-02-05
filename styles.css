@@ -3,12 +3,12 @@
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
-    background: #FAF3E0; /* Cream background */
+    background: url('https://www.transparenttextures.com/patterns/aged-paper.png'); /* Subtle parchment background */
     color: #1e1e1e;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .dark-mode {
-    background: #1e1e1e;
+    background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png'); /* Subtle dark texture */
     color: #f8f8f8;
 }
 .brand-light, .brand-dark {
@@ -20,7 +20,7 @@ body {
     color: gold;
 }
 .container {
-    background: white;
+    background: rgba(255, 255, 255, 0.9); /* Slight opacity for depth */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -34,29 +34,25 @@ body {
     align-items: center; /* Center align content */
 }
 .dark-mode .container {
-    background: #333;
+    background: rgba(51, 51, 51, 0.9);
     color: #f8f8f8;
     border-color: #777;
 }
-.ratio-container h2 {
-    color: maroon; /* Matching the font color of other calculator titles */
-}
-.dark-mode .ratio-container h2 {
-    color: gold; /* Matching the dark mode styling */
-}
 .tip-box {
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 450px;
-    margin: 30px auto 40px auto; /* Adds more spacing between tip box and first calculator */
+    margin: 30px auto 40px auto;
+    border: 2px solid maroon;
 }
 .dark-mode .tip-box {
-    background: #222;
+    background: rgba(34, 34, 34, 0.9);
+    border-color: gold;
 }
 .ratio-container {
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -67,7 +63,7 @@ body {
     border: 2px solid black;
 }
 .dark-mode .ratio-container {
-    background: #333;
+    background: rgba(51, 51, 51, 0.9);
     color: #f8f8f8;
     border-color: #777;
 }
@@ -102,7 +98,7 @@ button {
     font-size: 1rem;
     border-radius: 5px;
     margin-top: 10px;
-    width: 200px; /* Matching dark mode toggle button width */
+    width: 200px;
     text-align: center;
 }
 button:hover {
