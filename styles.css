@@ -111,11 +111,11 @@ body {
 .result {
     font-size: 1.2rem;
     font-weight: bold;
-    color: darkgreen;
+    color: Black;
 }
 
 button {
-    background-color: green;
+    background-color: black;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -128,7 +128,7 @@ button {
 }
 
 button:hover {
-    background-color: darkgreen;
+    background-color: Black;
 }
 
 input, select {
