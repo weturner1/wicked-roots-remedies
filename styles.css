@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 
 body {
@@ -10,36 +11,48 @@ body {
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Fix: Ensure Logo is Properly Positioned */
+/* 🔹 LOGO FIX - Ensure Centered & Scaled Correctly */
 .brand-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .brand-logo {
-    width: 280px; /* Adjust as needed */
+    width: 250px; /* Reduced Size for Better Fit */
     height: auto;
     display: block;
 }
 
-/* Dark Mode Styling */
+/* 🔹 PANEL SIZING FIX - Adjust Width & Margins */
+.container {
+    background: rgba(245, 239, 224, 0.95); /* Warmer cream tone */
+    padding: 15px; /* Reduced Padding */
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    max-width: 420px; /* Adjusted Width for Better Fit */
+    margin: 20px auto;
+    color: #3e2723;
+    border: 2px solid #5a1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🔹 Dark Mode Fixes */
 .dark-mode {
     background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
     color: #f8f8f8;
 }
 
-/* Lighter Gray Panel Backgrounds for Dark Mode */
-.dark-mode .container, 
-.dark-mode .ratio-container, 
-.dark-mode .tip-box {
-    background: rgba(80, 80, 80, 0.9); /* Softer Gray */
+.dark-mode .container {
+    background: rgba(80, 80, 80, 0.9); /* Lighter Gray */
     color: #f8f8f8;
     border-color: gold;
 }
 
-/* Fix: Ensure Common Vanilla Extraction Ratios Title Matches Calculator Titles */
+/* 🔹 FIX: Ensure Common Vanilla Extraction Ratios Title Matches Calculator Titles */
 #ratios h2 {
     color: #5a1e1e !important; /* Dark Maroon */
     font-weight: bold;
@@ -51,9 +64,9 @@ body {
     color: gold !important; /* Matches Calculator 2 in Dark Mode */
 }
 
-/* Buttons - Gold in Dark Mode */
+/* 🔹 BUTTONS FIX - Toggle Matches Calculate Button */
 button {
-    background-color: #5a1e1e; /* Deep maroon */
+    background-color: #5a1e1e; /* Deep Maroon */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -61,24 +74,33 @@ button {
     font-size: 1rem;
     border-radius: 5px;
     margin-top: 10px;
-    width: 200px;
+    width: 180px; /* Standardized Button Width */
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #822727; /* Lighter maroon on hover */
+    background-color: #822727; /* Lighter Maroon on Hover */
 }
 
-/* Dark Mode Button Color Change */
-.dark-mode button {
+/* 🔹 Ensure Toggle Button Matches Calculate Button in Light Mode */
+.toggle-dark-mode {
+    background-color: #5a1e1e !important;
+    color: white !important;
+    width: 180px;
+    margin: 15px auto;
+}
+
+/* 🔹 Ensure Buttons Are Gold in Dark Mode */
+.dark-mode button, 
+.dark-mode .toggle-dark-mode {
     background-color: gold !important;
     color: black !important;
 }
 
-/* Input Fields */
+/* 🔹 Input Fields */
 input, select {
-    width: 80%;
+    width: 75%;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #5a1e1e;
@@ -87,15 +109,15 @@ input, select {
     color: #3e2723;
 }
 
-/* Footer Styling */
+/* 🔹 FOOTER FIX - Correct Color */
 .footer {
-    background-color: #5a1e1e !important; /* Deep Maroon */
+    background-color: #5a1e1e !important; /* Dark Maroon */
     color: white !important;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     font-size: 0.9rem;
     position: relative;
-    bottom: -20px;
+    bottom: -10px; /* Slightly Adjusted */
     width: 100%;
 }
 
@@ -105,7 +127,7 @@ input, select {
     text-decoration: underline;
 }
 
-/* Table Styling */
+/* 🔹 TABLE STYLING */
 .styled-table {
     width: 100%;
     border-collapse: collapse;
@@ -127,10 +149,9 @@ input, select {
     color: white;
 }
 
-/* Calculator Output Text */
+/* 🔹 Calculator Output Text */
 .result {
     font-size: 1.2rem;
     font-weight: bold;
     color: darkgreen;
 }
-
