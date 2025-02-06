@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 
 body {
@@ -8,8 +9,6 @@ body {
     background-position: center;
     color: #1e1e1e;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-    margin: 0; /* Ensures no extra margin */
-    padding: 0;
 }
 
 /* Logo Styling */
@@ -17,7 +16,7 @@ body {
     width: 300px; /* Adjust width as needed */
     height: auto;
     display: block;
-    margin: 20px auto; /* Centers the logo with spacing */
+    margin: 40px auto 20px auto; /* Centers the logo with spacing */
 }
 
 /* Panel Styling */
@@ -102,11 +101,6 @@ button:hover {
     background-color: #822727; /* Lighter maroon on hover */
 }
 
-.dark-mode button {
-    background-color: gold;
-    color: black;
-}
-
 /* Input Fields */
 input, select {
     width: 80%;
@@ -122,19 +116,24 @@ input, select {
 .footer {
     background-color: #5a1e1e; /* Dark maroon */
     color: white;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
-    font-size: 0.9rem;
-    position: relative;
-    bottom: 0; /* Fixes positioning */
+    font-size: 1rem;
+    position: relative; /* Prevents overlapping */
     width: 100%;
     margin-top: 20px;
+    z-index: 1000; /* Ensures it stays on top */
 }
 
 /* Dark Mode Footer */
 .dark-mode .footer {
     background-color: gold;
     color: black;
+}
+
+/* Remove any extra footer panel */
+.extra-footer-panel {
+    display: none !important;
 }
 
 /* Table Styling */
@@ -164,9 +163,4 @@ input, select {
     font-size: 1.2rem;
     font-weight: bold;
     color: darkgreen;
-}
-
-/* Remove the extra bottom panel */
-.extra-footer-panel {
-    display: none;
 }
