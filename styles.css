@@ -169,3 +169,9 @@ input, select {
 .extra-footer-pane {
     display: none;
 }
+
+footer:empty, .extra-footer-pane {
+    display: none !important;
+}
+
+
