@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 
 body {
@@ -10,78 +11,22 @@ body {
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Logo Styling */
-.brand-logo {
-    width: 300px; /* Adjust width as needed */
-    height: auto;
-    display: block;
-    margin: 40px auto 20px auto; /* Centers the logo with spacing */
-}
-
-/* Panel Styling */
-.container {
-    background: rgba(245, 239, 224, 0.95); /* Warmer cream tone */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    max-width: 450px;
-    margin: auto;
-    margin-bottom: 30px;
-    color: #3e2723; /* Dark brown text for readability */
-    border: 2px solid #5a1e1e; /* Dark maroon border */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align content */
-}
-
-/* Dark Mode */
+/* Dark Mode Styling */
 .dark-mode {
     background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png'); /* Subtle dark texture */
     color: #f8f8f8;
 }
 
-.dark-mode .container {
-    background: rgba(51, 51, 51, 0.9);
-    color: #f8f8f8;
-    border-color: gold;
-}
-
-/* Tip Box */
-.tip-box {
-    background: rgba(245, 239, 224, 0.95);
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 450px;
-    margin: 30px auto 40px auto;
-    border: 2px solid #5a1e1e;
-}
-
+/* Lighter Gray Panel Backgrounds for Dark Mode */
+.dark-mode .container, 
+.dark-mode .ratio-container, 
 .dark-mode .tip-box {
-    background: rgba(34, 34, 34, 0.9);
-    border-color: gold;
-}
-
-/* Ratio Panel */
-.ratio-container {
-    background: rgba(245, 239, 224, 0.95);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    max-width: 450px;
-    margin: auto;
-    margin-bottom: 30px;
-    color: #3e2723;
-    border: 2px solid #5a1e1e;
-}
-
-.dark-mode .ratio-container {
-    background: rgba(51, 51, 51, 0.9);
+    background: rgba(80, 80, 80, 0.9); /* Softer Gray */
     color: #f8f8f8;
-    border-color: gold;
+    border-color: gold; /* Maintain Gold Borders */
 }
 
-/* Ensure Common Vanilla Extract Ratios title matches Calculator Titles */
+/* Ensure Common Vanilla Extraction Ratios title matches Calculator Titles */
 #ratios h2 {
     color: #5a1e1e !important; /* Exact Dark Maroon like other calculator titles */
     font-weight: bold;
@@ -89,7 +34,11 @@ body {
     margin-bottom: 10px;
 }
 
-/* Buttons */
+.dark-mode #ratios h2 {
+    color: gold !important; /* Matches Calculator 2 in Dark Mode */
+}
+
+/* Buttons - Gold in Dark Mode */
 button {
     background-color: #5a1e1e; /* Deep maroon */
     color: white;
@@ -106,6 +55,12 @@ button {
 
 button:hover {
     background-color: #822727; /* Lighter maroon on hover */
+}
+
+/* Dark Mode Button Color Change */
+.dark-mode button {
+    background-color: gold !important;
+    color: black !important;
 }
 
 /* Input Fields */
