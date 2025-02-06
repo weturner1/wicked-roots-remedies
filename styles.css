@@ -81,9 +81,9 @@ body {
     border-color: gold;
 }
 
-/* Ensuring Common Vanilla Extract Ratios title matches Calculator 2 */
+/* Ensure Common Vanilla Extract Ratios title matches Calculator Titles */
 #ratios h2 {
-    color: darkgreen !important; /* Matches Calculator 2 */
+    color: #5a1e1e !important; /* Exact Dark Maroon like other calculator titles */
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
@@ -121,7 +121,7 @@ input, select {
 
 /* Footer Styling */
 .footer {
-    background-color: #5a1e1e !important; /* Deep maroon (matches Calculate button) */
+    background-color: #5a1e1e !important; /* Deep Maroon (matches Calculate button) */
     color: white !important;
     padding: 10px;
     text-align: center;
