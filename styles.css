@@ -12,31 +12,31 @@ body {
 
 /* Logo Styling */
 .brand-logo {
-    width: 300px; /* Adjust width as needed */
+    width: 300px;
     height: auto;
     display: block;
-    margin: 40px auto 20px auto; /* Centers the logo with spacing */
+    margin: 40px auto 20px auto;
 }
 
 /* Panel Styling */
 .container {
-    background: rgba(245, 239, 224, 0.95); /* Warmer cream tone */
+    background: rgba(245, 239, 224, 0.95);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     max-width: 450px;
     margin: auto;
     margin-bottom: 30px;
-    color: #3e2723; /* Dark brown text for readability */
-    border: 2px solid #5a1e1e; /* Dark maroon border */
+    color: #3e2723;
+    border: 2px solid #5a1e1e;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align content */
+    align-items: center;
 }
 
 /* Dark Mode */
 .dark-mode {
-    background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png'); /* Subtle dark texture */
+    background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
     color: #f8f8f8;
 }
 
@@ -83,7 +83,7 @@ body {
 
 /* Buttons */
 button {
-    background-color: #5a1e1e; /* Deep maroon */
+    background-color: #5a1e1e;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -97,9 +97,10 @@ button {
 }
 
 button:hover {
-    background-color: #822727; /* Lighter maroon on hover */
+    background-color: #822727;
 }
 
+/* Dark Mode Buttons */
 .dark-mode button {
     background-color: gold;
     color: black;
@@ -114,7 +115,7 @@ input, select {
     width: 80%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #5a1e1e; /* Dark maroon */
+    border: 1px solid #5a1e1e;
     border-radius: 5px;
     background: rgba(255, 250, 240, 0.9);
     color: #3e2723;
@@ -122,13 +123,14 @@ input, select {
 
 /* Footer Styling */
 .footer {
-    background-color: #5a1e1e; /* Dark maroon */
+    background-color: #5a1e1e;
     color: white;
     padding: 10px;
     text-align: center;
     font-size: 0.9rem;
-    width: 100%;
     position: relative;
+    bottom: -20px;
+    width: 100%;
 }
 
 .dark-mode .footer {
@@ -143,7 +145,7 @@ input, select {
 }
 
 .styled-table th, .styled-table td {
-    border: 1px solid #5a1e1e; /* Dark maroon for contrast */
+    border: 1px solid #5a1e1e;
     padding: 10px;
     text-align: center;
 }
@@ -165,13 +167,11 @@ input, select {
     color: darkgreen;
 }
 
-/* Fix for Extra Pane Below Footer */
-.extra-footer-pane {
-    display: none;
+/* Common Vanilla Extraction Ratios Title Fix */
+h2 {
+    color: #5a1e1e;
 }
 
-footer:empty, .extra-footer-pane {
-    display: none !important;
+.dark-mode h2 {
+    color: gold;
 }
-
-
