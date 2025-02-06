@@ -3,52 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wickedlogo.pngs</title>
+    <title>Wicked Roots & Remedies</title>
     <link rel="stylesheet" href="styles.css">
     <script src="theme.js" defer></script>
     <script src="calculator.js" defer></script>
 </head>
 <body>
 
-    <div class="brand-header">
-        <img src="https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/main/logo.png" alt="Wicked Roots & Remedies Logo" class="brand-logo">
-    </div>
+    <div id="header"></div>
 
-    <button class="toggle-dark-mode">Toggle Dark Mode</button>
+    <!-- Fix: Dark Mode Toggle Button Width Adjustment -->
+    <button class="toggle-dark-mode" style="width: 200px; margin: 10px auto;">
+        Toggle Dark Mode
+    </button>
 
-    <div class="tip-box">
-        <p><strong>Tip:</strong> For the best vanilla extraction, always use high-proof alcohol.</p>
-    </div>
+    <div id="tips"></div>
+    <div id="calculator1"></div>
+    <div id="calculator2"></div>
+    <div id="calculator3"></div>
+    <div id="ratios"></div>
+    <div id="footer"></div>
 
-    <div class="container">
-        <h2>Vanilla Extract Calculator</h2>
-        <p>Calculate the ideal vanilla-to-alcohol ratio.</p>
-        <input type="number" id="bean-weight" placeholder="Enter bean weight (oz)">
-        <input type="number" id="alcohol-proof" placeholder="Enter alcohol proof">
-        <button onclick="calculateExtract()">Calculate</button>
-        <p class="result" id="result1"></p>
-    </div>
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(html => document.getElementById(id).innerHTML = html);
+        }
 
-    <div class="container">
-        <h2>Alcohol Dilution Calculator</h2>
-        <p>Calculate the right dilution for your alcohol.</p>
-        <input type="number" id="starting-proof" placeholder="Starting proof">
-        <input type="number" id="desired-proof" placeholder="Desired proof">
-        <button onclick="calculateDilution()">Calculate</button>
-        <p class="result" id="result2"></p>
-    </div>
+        loadComponent("header", "header.html");
+        loadComponent("tips", "tips.html");
+        loadComponent("calculator1", "calculator1.html");
+        loadComponent("calculator2", "calculator2.html");
+        loadComponent("calculator3", "calculator3.html");
+        loadComponent("ratios", "ratios.html");
+        loadComponent("footer", "footer.html");
+    </script>
 
-    <div class="container">
-        <h2>Vanilla Bean Ounce Calculator</h2>
-        <p>Calculate how much alcohol is needed for your vanilla beans.</p>
-        <input type="number" id="bean-ounce" placeholder="Enter vanilla bean weight (oz)">
-        <button onclick="calculateVanillaOunce()">Calculate</button>
-        <p class="result" id="result3"></p>
-    </div>
-
-    <div class="footer">Contact us at <a href="mailto:wickedrootsandremedies@gmail.com">wickedrootsandremedies@gmail.com</a></div>
-
-</body>
-</html>
 </body>
 </html>
