@@ -1,86 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
-    background: url('https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/refs/heads/main/parchment.webp');
+    background: url('https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/refs/heads/main/parchment.webp'); /* Plain aged parchment */
     background-size: cover;
     background-position: center;
     color: #1e1e1e;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-/* Header Styling */
-header {
-    background-color: #5a1e1e; /* Dark Maroon */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #822727; /* Slightly lighter maroon for contrast */
-}
-
-header h1 {
-    font-family: 'Uncial Antiqua', cursive;
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-header nav {
-    margin-top: 10px;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-}
-
-header nav a:hover {
-    color: gold;
+    padding-bottom: 60px; /* Prevents footer overlap */
 }
 
 /* Logo Styling */
-.brand-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    text-align: center;
-}
-
 .brand-logo {
-    width: 250px;
+    width: 300px; /* Adjust width as needed */
     height: auto;
     display: block;
-    margin: auto;
+    margin: 40px auto 20px auto; /* Centers the logo with spacing */
 }
 
 /* Panel Styling */
 .container {
-    background: rgba(245, 239, 224, 0.95);
-    padding: 15px;
+    background: rgba(245, 239, 224, 0.95); /* Warmer cream tone */
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
-    max-width: 420px;
-    margin: 20px auto;
-    color: #3e2723;
-    border: 2px solid #5a1e1e;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #3e2723; /* Dark brown text for readability */
+    border: 2px solid #5a1e1e; /* Dark maroon border */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center align content */
 }
 
 /* Dark Mode */
 .dark-mode {
-    background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+    background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png'); /* Subtle dark texture */
     color: #f8f8f8;
 }
 
 .dark-mode .container {
-    background: rgba(80, 80, 80, 0.9);
+    background: rgba(51, 51, 51, 0.9);
     color: #f8f8f8;
     border-color: gold;
 }
@@ -122,7 +84,7 @@ header nav a:hover {
 
 /* Buttons */
 button {
-    background-color: #5a1e1e;
+    background-color: #5a1e1e; /* Deep maroon */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -130,35 +92,21 @@ button {
     font-size: 1rem;
     border-radius: 5px;
     margin-top: 10px;
-    width: 180px;
+    width: 200px;
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #822727;
-}
-
-.toggle-dark-mode {
-    background-color: #5a1e1e !important;
-    color: white !important;
-    width: 180px;
-    margin: 15px auto;
-}
-
-.dark-mode button,
-.dark-mode .toggle-dark-mode {
-    background-color: gold !important;
-    color: black !important;
+    background-color: #822727; /* Lighter maroon on hover */
 }
 
 /* Input Fields */
-input,
-select {
-    width: 75%;
+input, select {
+    width: 80%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #5a1e1e;
+    border: 1px solid #5a1e1e; /* Dark maroon */
     border-radius: 5px;
     background: rgba(255, 250, 240, 0.9);
     color: #3e2723;
@@ -166,27 +114,29 @@ select {
 
 /* Footer Styling */
 .footer {
-    background-color: #5a1e1e !important;
-    color: white !important;
-    padding: 12px;
+    background-color: #5a1e1e; /* Dark maroon */
+    color: white;
+    padding: 15px;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 100%;
-    margin-top: 15px;
+    position: fixed; /* Fixes footer to bottom */
+    bottom: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it's above everything */
 }
 
-.dark-mode .footer {
-    background-color: gold !important;
-    color: black !important;
-}
-
+/* Ensure footer is clickable */
 .footer a {
-    color: white !important;
+    color: white;
     text-decoration: underline;
+    pointer-events: auto;
 }
 
-.dark-mode .footer a {
-    color: black !important;
+/* Dark Mode Footer */
+.dark-mode .footer {
+    background-color: gold;
+    color: black;
 }
 
 /* Table Styling */
@@ -195,9 +145,8 @@ select {
     border-collapse: collapse;
 }
 
-.styled-table th,
-.styled-table td {
-    border: 1px solid #5a1e1e;
+.styled-table th, .styled-table td {
+    border: 1px solid #5a1e1e; /* Dark maroon for contrast */
     padding: 10px;
     text-align: center;
 }
