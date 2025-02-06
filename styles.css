@@ -1,90 +1,61 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
-    background: url('https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/refs/heads/main/parchment.webp');
+    background: url('https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/refs/heads/main/parchment.webp'); /* Plain aged parchment */
     background-size: cover;
     background-position: center;
     color: #1e1e1e;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Logo Styling */
-.brand-logo {
-    width: 300px;
-    height: auto;
-    display: block;
-    margin: 40px auto 20px auto;
+/* Dark Mode */
+.dark-mode {
+    background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png'); /* Subtle dark texture */
+    color: #f8f8f8;
 }
 
 /* Panel Styling */
-.container {
-    background: rgba(245, 239, 224, 0.95);
+.container, .ratio-container {
+    background: rgba(245, 239, 224, 0.95); /* Warmer cream tone */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     max-width: 450px;
     margin: auto;
     margin-bottom: 30px;
-    color: #3e2723;
-    border: 2px solid #5a1e1e;
+    color: #3e2723; /* Dark brown text for readability */
+    border: 2px solid #5a1e1e; /* Dark maroon border */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center align content */
 }
 
-/* Dark Mode */
-.dark-mode {
-    background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
-    color: #f8f8f8;
-}
-
-.dark-mode .container {
-    background: rgba(51, 51, 51, 0.9);
+/* Dark Mode Panel Updates */
+.dark-mode .container, .dark-mode .ratio-container {
+    background: rgba(80, 80, 80, 0.9); /* Lighter shade of grey */
     color: #f8f8f8;
     border-color: gold;
 }
 
-/* Tip Box */
-.tip-box {
-    background: rgba(245, 239, 224, 0.95);
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 450px;
-    margin: 30px auto 40px auto;
-    border: 2px solid #5a1e1e;
+/* Titles */
+h2 {
+    color: #5a1e1e; /* Dark maroon */
 }
 
-.dark-mode .tip-box {
-    background: rgba(34, 34, 34, 0.9);
-    border-color: gold;
+.dark-mode h2 {
+    color: gold;
 }
 
-/* Ratio Panel */
-.ratio-container {
-    background: rgba(245, 239, 224, 0.95);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    max-width: 450px;
-    margin: auto;
-    margin-bottom: 30px;
-    color: #3e2723;
-    border: 2px solid #5a1e1e;
-}
-
-.dark-mode .ratio-container {
-    background: rgba(51, 51, 51, 0.9);
-    color: #f8f8f8;
-    border-color: gold;
+/* Specific Fix for Ratios Title */
+.dark-mode .ratio-container h2 {
+    color: gold; /* Matches calculator title color */
 }
 
 /* Buttons */
 button {
-    background-color: #5a1e1e;
+    background-color: #5a1e1e; /* Deep maroon */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -98,7 +69,7 @@ button {
 }
 
 button:hover {
-    background-color: #822727;
+    background-color: #822727; /* Lighter maroon on hover */
 }
 
 /* Dark Mode Buttons */
@@ -107,44 +78,21 @@ button:hover {
     color: black;
 }
 
-.dark-mode button:hover {
-    background-color: #d4af37;
-}
-
-/* Input Fields */
-input, select {
-    width: 80%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #5a1e1e;
-    border-radius: 5px;
-    background: rgba(255, 250, 240, 0.9);
-    color: #3e2723;
-}
-
 /* Footer Styling */
 .footer {
-    background-color: #5a1e1e;
+    background-color: #5a1e1e; /* Dark maroon */
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     font-size: 0.9rem;
     position: relative;
-    bottom: 0;
+    bottom: -20px; /* Move up to fit better on parchment */
     width: 100%;
 }
 
 .dark-mode .footer {
     background-color: gold;
     color: black;
-}
-
-/* Fix: Remove bottom padding from ghost div */
-body::after {
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
 }
 
 /* Table Styling */
@@ -154,7 +102,7 @@ body::after {
 }
 
 .styled-table th, .styled-table td {
-    border: 1px solid #5a1e1e;
+    border: 1px solid #5a1e1e; /* Dark maroon for contrast */
     padding: 10px;
     text-align: center;
 }
@@ -175,18 +123,3 @@ body::after {
     font-weight: bold;
     color: darkgreen;
 }
-
-/* Common Vanilla Extraction Ratios Title Fix */
-h2 {
-    color: #5a1e1e;
-}
-
-.dark-mode h2 {
-    color: gold;
-}
-
-/* Adjust Footer Position */
-.footer {
-    margin-top: 20px;
-}
-
