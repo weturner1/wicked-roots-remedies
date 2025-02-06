@@ -8,7 +8,8 @@ body {
     background-position: center;
     color: #1e1e1e;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-    padding-bottom: 60px; /* Prevents footer overlap */
+    margin: 0; /* Ensures no extra margin */
+    padding: 0;
 }
 
 /* Logo Styling */
@@ -16,7 +17,7 @@ body {
     width: 300px; /* Adjust width as needed */
     height: auto;
     display: block;
-    margin: 40px auto 20px auto; /* Centers the logo with spacing */
+    margin: 20px auto; /* Centers the logo with spacing */
 }
 
 /* Panel Styling */
@@ -101,6 +102,11 @@ button:hover {
     background-color: #822727; /* Lighter maroon on hover */
 }
 
+.dark-mode button {
+    background-color: gold;
+    color: black;
+}
+
 /* Input Fields */
 input, select {
     width: 80%;
@@ -116,21 +122,13 @@ input, select {
 .footer {
     background-color: #5a1e1e; /* Dark maroon */
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0; /* Fixes positioning */
     width: 100%;
-    position: fixed; /* Fixes footer to bottom */
-    bottom: 0;
-    left: 0;
-    z-index: 1000; /* Ensures it's above everything */
-}
-
-/* Ensure footer is clickable */
-.footer a {
-    color: white;
-    text-decoration: underline;
-    pointer-events: auto;
+    margin-top: 20px;
 }
 
 /* Dark Mode Footer */
@@ -166,4 +164,9 @@ input, select {
     font-size: 1.2rem;
     font-weight: bold;
     color: darkgreen;
+}
+
+/* Remove the extra bottom panel */
+.extra-footer-panel {
+    display: none;
 }
