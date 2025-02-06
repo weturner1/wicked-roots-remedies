@@ -83,7 +83,7 @@ body {
 
 /* Ensuring Common Vanilla Extract Ratios title matches Calculator 2 */
 #ratios h2 {
-    color: darkgreen; /* Matches Calculator 2 */
+    color: darkgreen !important; /* Matches Calculator 2 */
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
@@ -121,8 +121,8 @@ input, select {
 
 /* Footer Styling */
 .footer {
-    background-color: #5a1e1e; /* Deep maroon (matches Calculate button) */
-    color: white;
+    background-color: #5a1e1e !important; /* Deep maroon (matches Calculate button) */
+    color: white !important;
     padding: 10px;
     text-align: center;
     font-size: 0.9rem;
@@ -133,7 +133,7 @@ input, select {
 
 /* Footer Link Styling */
 .footer a {
-    color: white;
+    color: white !important;
     text-decoration: underline;
 }
 
