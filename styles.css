@@ -3,7 +3,7 @@
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
-    background: url('https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/refs/heads/main/parchment.webp'); /* Plain aged parchment */
+    background: url('https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/refs/heads/main/parchment.webp');
     background-size: cover;
     background-position: center;
     color: #1e1e1e;
@@ -125,17 +125,25 @@ input, select {
 .footer {
     background-color: #5a1e1e;
     color: white;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     font-size: 0.9rem;
     position: relative;
-    bottom: -20px;
+    bottom: 0;
     width: 100%;
 }
 
 .dark-mode .footer {
     background-color: gold;
     color: black;
+}
+
+/* Fix: Remove bottom padding from ghost div */
+body::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 /* Table Styling */
@@ -174,4 +182,9 @@ h2 {
 
 .dark-mode h2 {
     color: gold;
+}
+
+/* Adjust Footer Position */
+.footer {
+    margin-top: 20px;
 }
