@@ -18,7 +18,7 @@ body {
 
 /* Panel Styling (Lighter with Linen Texture) */
 .container, .ratio-container {
-    background: rgba(200, 200, 200, 0.85); /* Lighter grey */
+    background: rgba(225, 225, 225, 0.85); /* Light grey */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -75,6 +75,7 @@ button:hover {
 .styled-table {
     width: 100%;
     border-collapse: collapse;
+    background: rgba(245, 239, 224, 0.95); /* Matching calculator input fields */
 }
 
 .styled-table th, .styled-table td {
@@ -84,30 +85,13 @@ button:hover {
 }
 
 .styled-table th {
-    background-color: #c2c2c2; /* Lighter grey */
-    color: black;
-}
-
-/* Ratio Section - Now Matches Calculator Panels */
-.ratio-container {
-    background: rgba(200, 200, 200, 0.85); /* Same as calculator panels */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    max-width: 450px;
-    margin: auto;
-    margin-bottom: 30px;
-    color: #1a1a1a; /* Dark metallic black text */
-    border: 2px solid #1a1a1a; /* Metallic black outline */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('https://www.transparenttextures.com/patterns/linen.png'); /* Linen texture */
+    background-color: #e0e0e0; /* Matching calculator input fields */
+    color: #1a1a1a; /* Metallic black text */
 }
 
 /* Tip Box */
 .tip-box {
-    background: rgba(200, 200, 200, 0.95); /* Lighter grey */
+    background: rgba(225, 225, 225, 0.95); /* Light grey */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -117,9 +101,9 @@ button:hover {
     color: #1a1a1a; /* Dark metallic black text */
 }
 
-/* Calculator Output Text */
+/* Calculator Output Text (Now Metallic Black) */
 .result {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #8fbc8f; /* Muted herbal green */
+    color: #1a1a1a; /* Metallic black */
 }
