@@ -1,7 +1,7 @@
-/* Header container - Reduce height */
+/* Header container - Reduce height further */
 .header-container {
     background-color: #1E1E1E; /* Darker to match thorn colors */
-    padding: 10px 0; /* Reduce padding for a smaller header */
+    padding: 7px 0; /* Reduced further */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,11 +14,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .brand-logo {
-    width: 180px; /* Slightly smaller to fit */
+    width: 175px; /* Adjusted to fit smaller header */
     height: auto;
 }
 
@@ -31,7 +31,7 @@
 
 .nav-links a {
     text-decoration: none;
-    color: #D4AF37; /* Soft gold for contrast */
+    color: #C0C0C0; /* Metallic Silver */
     font-size: 16px;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
