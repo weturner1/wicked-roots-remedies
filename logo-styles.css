@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 120px; /* Reduced height */
-    background: linear-gradient(to right, #c0c0c0, #444, #1e1e1e); /* Light silver to dark blend */
+    height: 120px; /* Adjusted header height */
+    background: linear-gradient(to right, #c0c0c0, #77614E, #2e2e2e); /* Silver to brown to dark blend */
     padding: 10px 30px;
     border-bottom: 4px solid #822727; /* Metallic red bottom border */
 }
@@ -19,7 +19,7 @@
 
 /* Logo Styling */
 .brand-logo {
-    width: 110px; /* Increased logo size */
+    width: 165px; /* Increased logo size by 50% */
     height: auto;
     margin-left: 20px;
 }
