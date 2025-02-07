@@ -16,9 +16,9 @@ body {
     margin: 40px auto 20px auto; /* Centers the logo with spacing */
 }
 
-/* Panel Styling */
-.container {
-    background: rgba(30, 30, 30, 0.95); /* Deep metallic black */
+/* Panel Styling (Updated for Lighter Background) */
+.container, .ratio-container {
+    background: rgba(60, 60, 60, 0.85); /* Lighter metallic gunmetal */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -83,8 +83,24 @@ button:hover {
 }
 
 .styled-table th {
-    background-color: #2a2a2a; /* Dark metallic black */
+    background-color: #4a4a4a; /* Lighter gunmetal black */
     color: white;
+}
+
+/* Ratio Section - Now Matches Calculator Panels */
+.ratio-container {
+    background: rgba(60, 60, 60, 0.85); /* Same as calculator panels */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #e0e0e0; /* Light silver text */
+    border: 2px solid #8B0000; /* Metallic red accent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Tip Box */
