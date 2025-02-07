@@ -19,8 +19,8 @@
 
 /* Logo */
 .header-logo {
-    height: 80px; /* Keeps current logo size */
-    margin-left: 88px; /* Moves logo 36px further to the right */
+    height: 88px; /* Increased by 10% from previous 80px */
+    margin-left: 88px; /* Keeps the 36px rightward adjustment */
 }
 
 /* Navigation Links */
