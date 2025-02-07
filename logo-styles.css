@@ -19,7 +19,7 @@
 
 /* Logo */
 .header-logo {
-    height: 88px; /* Increased by 10% from previous 80px */
+    height: 92px; /* Increased by 5% from previous 88px */
     margin-left: 88px; /* Keeps the 36px rightward adjustment */
 }
 
