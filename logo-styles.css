@@ -1,10 +1,10 @@
 /* Header Styling */
 .header-container {
     width: 100%;
-    height: 80px; /* Keeps the adjusted header size */
+    height: 80px; /* Adjusted for centered elements */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Centers everything inside */
     padding: 10px 20px;
     background: linear-gradient(to right, 
         #C0C0C0 0%,   /* Metallic Silver (START) */
@@ -17,19 +17,24 @@
     border-bottom: 4px solid #0A0A0A;  /* Metallic Black Line at Bottom */
 }
 
-/* Logo */
+/* Logo - Centered */
 .header-logo {
     height: 92px; /* Maintains 5% increase */
-    margin-left: 152px; /* Previously 88px → 124px → Now moved 64px further right */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centers logo horizontally */
 }
 
-/* Navigation Links */
+/* Navigation Links - Centered */
 .nav-links {
     display: flex;
     gap: 30px;
     font-size: 18px;
     font-weight: bold;
-    margin-right: 52px; /* Keeps navigation links unchanged */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centers navigation links horizontally */
+    bottom: 15px; /* Keeps them aligned at the bottom of the header */
 }
 
 .nav-links a {
