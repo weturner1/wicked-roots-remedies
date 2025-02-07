@@ -1,47 +1,127 @@
-/* General Styles */
+/* General Body Styling */
 body {
-    font-family: 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
-    background: url('background.jpg') no-repeat center center fixed;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background: url('background.png') no-repeat center center fixed;
     background-size: cover;
+    color: #2B2B2B; /* Deep charcoal for better contrast */
 }
 
-/* Header Styles */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    background: linear-gradient(to right, #C0C0C0, #8B7D6B, #1C1C1C); /* Metallic silver → Brownish-gray → Black */
-    border-top: 3px solid black;
-    border-bottom: 3px solid red;
+/* Panel Styling */
+.container, .ratio-container {
+    background: linear-gradient(to bottom, #F7F4F1, #EDEAE5); /* Soft parchment gradient */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for dimensionality */
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #3e2723;
+    border: 2px solid #282828; /* Metallic black border */
 }
 
-/* Logo */
-.logo-container {
-    margin-left: 20px;
+/* Enhanced vine engraving effect */
+.container::before, .ratio-container::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url('vine-pattern.png') no-repeat;
+    background-size: contain;
+    top: -15px;
+    left: -15px;
+    opacity: 0.5;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Simulated engraving effect */
 }
 
-.brand-logo {
-    width: 150px;
-    height: auto;
+/* Buttons */
+button {
+    background: linear-gradient(to bottom, #282828, #1E1E1E); /* Metallic black */
+    color: white;
+    padding: 12px 18px;
+    border: 2px solid #C0C0C0; /* Metallic silver outline */
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 220px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Navigation Links */
-.nav-links {
-    display: flex;
-    gap: 20px;
-    margin-right: 40px;
+/* Shimmer effect changed to metallic silver */
+button:hover {
+    background: linear-gradient(to right, #C0C0C0, #E0E0E0, #C0C0C0);
+    box-shadow: 0 0 8px rgba(192, 192, 192, 0.6);
 }
 
-.nav-links a {
+/* Tip Box */
+.tip-box {
+    background: rgba(247, 244, 241, 0.95);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 30px auto 40px auto;
+    border: 2px solid #5a1e1e;
+    position: relative;
+}
+
+/* Glowing effect for tip icon */
+.tip-box::before {
+    content: "🌿";
+    position: absolute;
+    left: 15px;
+    font-size: 1.4rem;
+    color: #008000;
+    text-shadow: 0 0 6px rgba(0, 255, 0, 0.7);
+}
+
+/* Footer Styling */
+.footer {
+    background: linear-gradient(to right, #282828, #1E1E1E); /* Metallic black */
+    color: white;
+    padding: 12px;
+}
+
+/* Thin metallic red line at the top of footer */
+.footer::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: linear-gradient(to right, #8B0000, #C00000, #8B0000);
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Make email hyperlink metallic silver */
+.footer a {
     color: #C0C0C0;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
 }
 
-.nav-links a:hover {
-    color: red;
+.footer a:hover {
+    color: #E0E0E0;
+}
+
+/* Form Input Fields */
+input, select {
+    width: 85%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #282828; /* Metallic black */
+    border-radius: 5px;
+    background: #FFFFFF; /* Matches table background */
+    color: #3e2723;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Calculator Title Font */
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #282828; /* Metallic black */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
