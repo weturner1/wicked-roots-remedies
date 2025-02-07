@@ -5,21 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wicked Roots & Remedies</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logo-styles.css">
     <script src="calculator.js" defer></script>
 </head>
 <body>
 
     <div id="header"></div>
-
-    <div id="tips"></div>
-    <div id="calculator1"></div>
-    <div id="calculator2"></div>
-    <div id="calculator3"></div>
-    <div id="ratios"></div>
-
-    <div id="footer">
-        Contact us at <a href="mailto:wickedrootsandremedies@gmail.com">wickedrootsandremedies@gmail.com</a>
-    </div>
 
     <script>
         function loadComponent(id, file) {
@@ -27,14 +18,7 @@
                 .then(response => response.text())
                 .then(html => document.getElementById(id).innerHTML = html);
         }
-
         loadComponent("header", "header.html");
-        loadComponent("tips", "tips.html");
-        loadComponent("calculator1", "calculator1.html");
-        loadComponent("calculator2", "calculator2.html");
-        loadComponent("calculator3", "calculator3.html");
-        loadComponent("ratios", "ratios.html");
-        loadComponent("footer", "footer.html");
     </script>
 
 </body>
