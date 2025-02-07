@@ -18,7 +18,7 @@ body {
 
 /* Panel Styling */
 .container {
-    background: rgba(227, 218, 201, 0.95); /* Aged parchment with gray undertone */
+    background: rgba(230, 214, 190, 0.97); /* Aged parchment with bronze undertone */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -26,7 +26,7 @@ body {
     margin: auto;
     margin-bottom: 30px;
     color: #3e2723;
-    border: 2px solid #2C2C2C; /* Dark metallic black */
+    border: 2px solid #7A1E1E; /* Deep metallic red */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,13 +34,13 @@ body {
 
 /* Title Text */
 h2 {
-    color: #63666A; /* Gunmetal gray */
+    color: #8C2F2F; /* Metallic red-bronze */
     font-weight: bold;
 }
 
 /* Buttons */
 button {
-    background-color: #5a1e1e; /* Deep maroon */
+    background-color: #7A1E1E; /* Metallic red */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -54,12 +54,12 @@ button {
 }
 
 button:hover {
-    background-color: #818181; /* Gunmetal sheen */
+    background-color: #B34A4A; /* Brighter red-bronze */
 }
 
 /* Footer Styling */
 .footer {
-    background-color: #2C2C2C; /* Dark metallic black */
+    background-color: #3A1B1B; /* Deep maroon-black */
     color: white;
     padding: 10px;
     text-align: center;
@@ -76,25 +76,25 @@ button:hover {
 }
 
 .styled-table th, .styled-table td {
-    border: 1px solid #2C2C2C; /* Dark metallic black */
+    border: 1px solid #7A1E1E; /* Metallic red */
     padding: 10px;
     text-align: center;
 }
 
 .styled-table th {
-    background-color: #63666A; /* Gunmetal gray */
+    background-color: #8C2F2F; /* Metallic red-bronze */
     color: white;
 }
 
 /* Tip Box */
 .tip-box {
-    background: rgba(184, 160, 142, 0.95); /* Softer grayish-bronze */
+    background: rgba(170, 110, 80, 0.9); /* Aged bronze-red */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 450px;
     margin: 30px auto 40px auto;
-    border: 2px solid #2C2C2C;
+    border: 2px solid #7A1E1E;
 }
 
 /* Calculator Output Text */
