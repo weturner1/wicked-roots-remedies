@@ -3,7 +3,7 @@
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
-    background: url('https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/main/dark-parchment-bg.jpg') no-repeat center center fixed;
+    background: url('background.png') no-repeat center center fixed;
     background-size: cover;
     color: #1e1e1e;
 }
