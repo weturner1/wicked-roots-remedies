@@ -19,8 +19,8 @@
 
 /* Logo */
 .header-logo {
-    height: 80px; /* Same size as before */
-    margin-left: 36px; /* Moves logo 1 inch (16px) to the right */
+    height: 80px; /* Keeps current logo size */
+    margin-left: 52px; /* Moves logo 1 inch (16px) to the right */
 }
 
 /* Navigation Links */
@@ -29,7 +29,7 @@
     gap: 30px;
     font-size: 18px;
     font-weight: bold;
-    margin-right: 36px; /* Moves nav links 1 inch (16px) to the left */
+    margin-right: 52px; /* Moves nav links 1 inch (16px) to the left */
 }
 
 .nav-links a {
