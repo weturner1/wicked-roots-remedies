@@ -71,6 +71,16 @@ button:hover {
     border-top: 2px solid #8B0000; /* Thin metallic red top border */
 }
 
+/* Footer Email Hyperlink */
+.footer a {
+    color: #C0C0C0; /* Metallic silver */
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #ffffff; /* Bright silver on hover */
+}
+
 /* Table Styling */
 .styled-table {
     width: 100%;
