@@ -5,7 +5,7 @@ body {
     text-align: center;
     background: url('background.png') no-repeat center center fixed;
     background-size: cover;
-    color: #d3d3d3; /* Light silver text for contrast */
+    color: #d3d3d3; /* Light silver text for readability */
 }
 
 /* Logo Styling */
@@ -18,15 +18,15 @@ body {
 
 /* Panel Styling */
 .container {
-    background: rgba(75, 75, 75, 0.95); /* Gunmetal grey */
+    background: rgba(30, 30, 30, 0.95); /* Deep metallic black */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     max-width: 450px;
     margin: auto;
     margin-bottom: 30px;
     color: #e0e0e0; /* Light silver text */
-    border: 2px solid #a8a8a8; /* Dark silver */
+    border: 2px solid #8B0000; /* Metallic red accent */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,16 +34,16 @@ body {
 
 /* Title Text */
 h2 {
-    color: #c0c0c0; /* Metallic silver */
+    color: #8B0000; /* Metallic deep red */
     font-weight: bold;
 }
 
 /* Buttons */
 button {
-    background-color: #545454; /* Blackened steel */
+    background-color: #1a1a1a; /* Metallic black */
     color: white;
     padding: 10px 15px;
-    border: none;
+    border: 2px solid #8B0000; /* Metallic red accent */
     cursor: pointer;
     font-size: 1rem;
     border-radius: 5px;
@@ -54,12 +54,12 @@ button {
 }
 
 button:hover {
-    background-color: #7a7a7a; /* Brighter steel grey */
+    background-color: #8B0000; /* Metallic red hover */
 }
 
 /* Footer Styling */
 .footer {
-    background-color: #444; /* Dark silver */
+    background-color: #1a1a1a; /* Metallic black */
     color: white;
     padding: 10px;
     text-align: center;
@@ -67,6 +67,7 @@ button:hover {
     position: relative;
     bottom: -20px;
     width: 100%;
+    border-top: 2px solid #C0C0C0; /* Thin metallic silver top border */
 }
 
 /* Table Styling */
@@ -76,25 +77,26 @@ button:hover {
 }
 
 .styled-table th, .styled-table td {
-    border: 1px solid #a8a8a8; /* Dark silver */
+    border: 1px solid #8B0000; /* Metallic red accent */
     padding: 10px;
     text-align: center;
 }
 
 .styled-table th {
-    background-color: #707070; /* Gunmetal grey */
+    background-color: #2a2a2a; /* Dark metallic black */
     color: white;
 }
 
 /* Tip Box */
 .tip-box {
-    background: rgba(105, 105, 105, 0.9); /* Aged silver steel */
+    background: rgba(20, 20, 20, 0.95); /* Darker tooltips */
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     max-width: 450px;
     margin: 30px auto 40px auto;
-    border: 2px solid #a8a8a8;
+    border: 2px solid #8B0000; /* Metallic red border */
+    color: #e0e0e0; /* Light silver text */
 }
 
 /* Calculator Output Text */
