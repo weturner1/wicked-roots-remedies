@@ -10,31 +10,22 @@
     border-bottom: 3px solid #b30000; /* Metallic red line */
 }
 
-/* Left Section (Logo Area) */
-.header-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0.3; /* Takes up 30% of header */
-    background: linear-gradient(to right, #d1d1d1, #a1a1a1, #777); /* Lighter gradient */
-    padding: 10px 0;
-}
-
-/* Center Logo */
+/* Logo Wrapper */
 .logo-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start; /* Keeps it on the left */
+    flex: 0.3; /* Adjust width as needed */
 }
 
+/* Logo */
 .brand-logo {
     width: 140px; /* Adjusted size */
     height: auto;
 }
 
-/* Right Section (Navigation) */
-.header-right {
+/* Navigation */
+.navigation {
     flex: 0.7;
     display: flex;
     align-items: center;
