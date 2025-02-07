@@ -7,20 +7,20 @@
     justify-content: space-between;
     padding: 10px 20px;
     background: linear-gradient(to right, 
-        #7A6A58 0%,   /* Warm brown from the background */
-        #84796A 25%,  /* Soft taupe blending */
-        #948B7E 50%,  /* Transition to metallic tones */
-        #5D5A56 75%,  /* Darker metallic grey */
-        #1A1A1A 100%  /* Deep black like footer */
+        #C0C0C0 0%,   /* Metallic Silver (START) */
+        #A49789 20%,  /* Soft Tan */
+        #8B8073 40%,  /* Tan-Grey Blend */
+        #5D5A56 60%,  /* Darker Metallic Grey */
+        #1A1A1A 100%  /* Deep Black (END) */
     );
-    border-top: 4px solid #5D0000;  /* Metallic red line at the top */
-    border-bottom: 4px solid #5D0000;  /* Red line at bottom for symmetry */
+    border-top: 4px solid #5D0000;  /* Metallic Red Line at Top */
+    border-bottom: 4px solid #5D0000;  /* Red Line at Bottom for Symmetry */
 }
 
 /* Logo */
 .header-logo {
     height: 80px; /* Same size as before */
-    margin-left: 20px; /* Adjusted to keep placement */
+    margin-left: 36px; /* Moves logo 1 inch (16px) to the right */
 }
 
 /* Navigation Links */
@@ -29,11 +29,12 @@
     gap: 30px;
     font-size: 18px;
     font-weight: bold;
+    margin-right: 36px; /* Moves nav links 1 inch (16px) to the left */
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #D6D6D6;  /* Metallic silver for readability */
+    color: #D6D6D6;  /* Metallic Silver for readability */
     transition: color 0.3s;
 }
 
