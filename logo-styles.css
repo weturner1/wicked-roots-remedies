@@ -4,22 +4,23 @@
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 70px; /* Adjusted header height */
     border-bottom: 2px solid rgba(192, 192, 192, 0.6);
     position: relative;
 }
 
-/* Logo Styling */
+/* Logo Container */
 .brand-logo-container {
+    display: flex;
+    align-items: center;
     position: absolute;
-    left: 20px; /* Moves the logo to the left */
-    top: 50%;
-    transform: translateY(-50%);
+    left: 15%; /* Moves logo slightly left, but before "Home" */
 }
 
+/* Logo Styling */
 .brand-logo {
-    width: 110px; /* Increased logo size */
+    width: 120px; /* Increased logo size */
     height: auto;
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
 }
@@ -29,7 +30,6 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 15px; /* Adjusted height for balance */
     display: flex;
     gap: 30px;
 }
