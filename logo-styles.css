@@ -1,3 +1,4 @@
+/* Center logo properly */
 .brand-logo-container {
     display: flex;
     justify-content: center;
@@ -15,12 +16,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0A0A0A; /* PURE deep black */
+    background: #0A0A0A; /* Pure deep black */
     border: 5px solid #000000; /* Solid black border */
     box-shadow: 
-        inset 3px 3px 8px rgba(255, 255, 255, 0.15), /* Subtle metallic highlights */
-        inset -3px -3px 8px rgba(0, 0, 0, 0.9), /* Deepened shadow for metal feel */
-        0px 10px 20px rgba(0, 0, 0, 1); /* STRONG drop shadow */
+        inset 2px 2px 10px rgba(255, 255, 255, 0.15), /* Subtle metallic highlights */
+        inset -2px -2px 10px rgba(0, 0, 0, 0.9), /* Deepened shadow for metal feel */
+        0px 10px 20px rgba(0, 0, 0, 1); /* Strong drop shadow */
 }
 
 /* Logo itself */
