@@ -5,115 +5,159 @@ body {
     text-align: center;
     background: url('background.png') no-repeat center center fixed;
     background-size: cover;
-    color: #d3d3d3; /* Light silver text for readability */
+    color: #2B2B2B; /* Deep charcoal for better contrast */
 }
 
 /* Logo Styling */
 .brand-logo {
-    width: 250px; /* Adjusted to prevent skewing */
+    width: 250px;
     height: auto;
     display: block;
-    margin: 40px auto 20px auto; /* Centers the logo with spacing */
+    margin: 40px auto 20px auto;
 }
 
-/* Panel Styling (Lighter with Linen Texture) */
+/* Panel Styling */
 .container, .ratio-container {
-    background: rgba(250, 250, 250, 0.95); /* White background to match input fields */
+    background: linear-gradient(to bottom, #F7F4F1, #EDEAE5); /* Soft parchment gradient */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    max-width: 450px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle drop shadow */
+    max-width: 500px;
     margin: auto;
     margin-bottom: 30px;
-    color: #1a1a1a; /* Dark metallic black text */
-    border: 2px solid #1a1a1a; /* Metallic black outline */
+    color: #3e2723;
+    border: 2px solid #282828; /* Metallic black border */
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('https://www.transparenttextures.com/patterns/linen.png'); /* Linen texture */
 }
 
-/* Title Text for Calculators & Ratios */
-h2 {
-    color: #1a1a1a; /* Metallic black */
-    font-weight: bold;
+/* Add subtle vine pattern in the panel corners */
+.container::before, .ratio-container::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('vine-pattern.png') no-repeat;
+    background-size: contain;
+    top: -10px;
+    left: -10px;
+    opacity: 0.2;
 }
 
 /* Buttons */
 button {
-    background-color: #1a1a1a; /* Metallic black */
+    background: linear-gradient(to bottom, #282828, #1E1E1E); /* Metallic black */
     color: white;
-    padding: 10px 15px;
+    padding: 12px 18px;
     border: 2px solid #C0C0C0; /* Metallic silver outline */
     cursor: pointer;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-top: 10px;
-    width: 200px;
+    width: 220px;
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
 
+/* Shimmer effect on hover */
 button:hover {
-    background-color: #8B0000; /* Metallic red hover */
+    background: linear-gradient(to right, #282828, #383838, #282828);
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+/* Tip Box */
+.tip-box {
+    background: rgba(247, 244, 241, 0.95);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 30px auto 40px auto;
+    border: 2px solid #5a1e1e;
+    position: relative;
+}
+
+/* Glowing effect for tip icon */
+.tip-box::before {
+    content: "🌿";
+    position: absolute;
+    left: 15px;
+    font-size: 1.4rem;
+    color: #008000;
+    text-shadow: 0 0 6px rgba(0, 255, 0, 0.7);
 }
 
 /* Footer Styling */
 .footer {
-    background-color: #1a1a1a; /* Metallic black */
+    background: linear-gradient(to right, #282828, #1E1E1E); /* Metallic black */
     color: white;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     font-size: 0.9rem;
-    position: relative;
-    bottom: -20px;
     width: 100%;
-    border-top: 2px solid #8B0000; /* Thin metallic red top border */
+    position: relative;
 }
 
-/* Footer Email Hyperlink */
+/* Thin metallic red line at the top of footer */
+.footer::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: linear-gradient(to right, #8B0000, #C00000, #8B0000);
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Make email hyperlink metallic silver */
 .footer a {
-    color: #C0C0C0; /* Metallic silver */
+    color: #C0C0C0;
     text-decoration: underline;
+    transition: color 0.3s ease-in-out;
 }
 
 .footer a:hover {
-    color: #ffffff; /* Bright silver on hover */
+    color: #E0E0E0;
 }
 
 /* Table Styling */
 .styled-table {
     width: 100%;
     border-collapse: collapse;
-    background: rgba(250, 250, 250, 0.95); /* Matching calculator input fields */
+    background: #FAFAFA; /* Matches input fields */
 }
 
-.styled-table th, .styled-table td {
-    border: 1px solid #1a1a1a; /* Metallic black outline */
-    padding: 10px;
-    text-align: center;
+/* Add soft shadow effect on hover */
+.styled-table tr:hover {
+    background: rgba(240, 240, 240, 0.8);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
 
-.styled-table th {
-    background-color: #f8f8f8; /* White to match calculator input fields */
-    color: #1a1a1a; /* Metallic black text */
-}
-
-/* Tip Box */
-.tip-box {
-    background: rgba(225, 225, 225, 0.95); /* Light grey */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    max-width: 450px;
-    margin: 30px auto 40px auto;
-    border: 2px solid #8B0000; /* Metallic red border */
-    color: #1a1a1a; /* Dark metallic black text */
-}
-
-/* Calculator Output Text (Now Metallic Red) */
+/* Calculator Output Text */
 .result {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #8B0000; /* Metallic red */
+    color: #C00000; /* Metallic red */
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+}
+
+/* Form Input Fields */
+input, select {
+    width: 85%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #282828; /* Metallic black */
+    border-radius: 5px;
+    background: #FFFFFF; /* Matches table background */
+    color: #3e2723;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Calculator Title Font */
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #282828; /* Metallic black */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
