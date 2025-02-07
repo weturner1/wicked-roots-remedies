@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75px; /* Further reduced height */
+    height: 70px; /* Adjusted for a more compact look */
     border-bottom: 2px solid rgba(192, 192, 192, 0.6);
     position: relative;
 }
@@ -15,13 +15,13 @@
 /* Logo Styling */
 .brand-logo-container {
     position: absolute;
-    top: 40px; /* Moves logo lower */
+    top: 10px; /* Moves logo higher */
     left: 50%;
     transform: translateX(-50%);
 }
 
 .brand-logo {
-    width: 90px; 
+    width: 85px; 
     height: auto;
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
 }
@@ -29,10 +29,10 @@
 /* Navigation Styling */
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     margin-top: 50px; /* Moves navigation links down */
     position: absolute;
-    top: 70px;
+    bottom: 10px; /* Adjusted to balance with the logo */
 }
 
 .nav-links a {
