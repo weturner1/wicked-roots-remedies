@@ -1,54 +1,51 @@
-/* Header Container */
+/* HEADER CONTAINER */
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 85px; /* Adjusted height */
-    background: linear-gradient(to right, #d4c4af 5%, #82776A 15%, #3e3e3e 50%, #1a1a1a 100%);
-    padding: 10px 30px;
-    border-bottom: 4px solid #822727; /* Metallic red line at the bottom */
+    height: 120px; /* Adjust this if needed */
+    background: linear-gradient(to right, #A8A8A8, #3D3D3D, #121212); /* Faster transition */
+    border-bottom: 3px solid #B30000; /* Metallic red border */
 }
 
-/* Left Section with Logo */
+/* LEFT SECTION: LOGO */
 .header-left {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    width: 20%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.6); /* Subtle blend */
 }
 
-/* Logo Styling */
+/* LOGO */
 .brand-logo {
-    width: 220px; /* Slightly reduced for balance */
+    width: 180px; /* Reduced by 10% */
     height: auto;
     position: relative;
-    top: 5px; /* Moves logo down inside header */
+    top: 5px; /* Moves logo up */
 }
 
-/* Right Section with Navigation */
+/* RIGHT SECTION: NAVIGATION */
 .header-right {
-    flex: 3;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    height: 100%;
 }
 
-/* Navigation Styling */
-.navigation {
-    display: flex;
-    gap: 40px;
-}
-
+/* NAVIGATION LINKS */
 .navigation a {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #c0c0c0; /* Metallic silver */
+    color: #D1D1D1; /* Metallic silver */
     text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px;
     transition: color 0.3s ease-in-out;
 }
 
 .navigation a:hover {
-    color: #ffcc00; /* Gold hover effect */
+    color: #B30000; /* Metallic red hover effect */
 }
