@@ -1,15 +1,14 @@
-/* Header Container */
+/* HEADER CONTAINER - FLEX LAYOUT */
 .header-container {
-    background: #0a0a0a; /* Keep dark but add a break */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 15px 0;
-    position: relative;
+    justify-content: space-between;
+    background: #0a0a0a; /* Keep dark background for nav */
+    padding: 10px 20px;
 }
 
-/* New Lighter Background Section for Logo */
-.header-logo-section {
+/* LEFT LOGO BOX */
+.header-logo-box {
     background: linear-gradient(to bottom, #d7d7d7, #b0b0b0); /* Metallic silver gradient */
     padding: 10px;
     border-radius: 5px;
@@ -17,22 +16,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    margin-bottom: 10px;
+    width: 180px; /* Fixed width */
+    height: 80px; /* Adjusted height */
 }
 
-/* Logo Styling */
+/* LOGO */
 .brand-logo {
     width: 140px; /* Increase size */
     height: auto;
-    display: block;
 }
 
-/* Navigation Links */
+/* NAVIGATION LINKS */
 .nav-links {
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 .nav-links a {
