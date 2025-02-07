@@ -6,7 +6,7 @@
     position: relative;
 }
 
-/* Improved metallic black border */
+/* SOLID METALLIC BLACK BORDER */
 .brand-logo-box {
     width: 270px; /* Slightly larger than the logo */
     height: auto;
@@ -15,12 +15,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(145deg, #101010, #292929); /* Deep metallic black */
-    border: 4px solid #0D0D0D; /* Stronger black border */
+    background: #0A0A0A; /* PURE deep black */
+    border: 5px solid #000000; /* Solid black border */
     box-shadow: 
-        inset 3px 3px 5px rgba(255, 255, 255, 0.2), /* Sharper metallic highlight */
-        inset -3px -3px 5px rgba(0, 0, 0, 0.8), /* Enhanced depth */
-        0px 8px 16px rgba(0, 0, 0, 1); /* Deeper drop shadow for floating effect */
+        inset 3px 3px 8px rgba(255, 255, 255, 0.15), /* Subtle metallic highlights */
+        inset -3px -3px 8px rgba(0, 0, 0, 0.9), /* Deepened shadow for metal feel */
+        0px 10px 20px rgba(0, 0, 0, 1); /* STRONG drop shadow */
 }
 
 /* Logo itself */
@@ -32,7 +32,7 @@
     z-index: 2;
 }
 
-/* Stronger drop shadow under the logo */
+/* Enhanced drop shadow under the logo */
 .brand-logo-box::after {
     content: "";
     position: absolute;
