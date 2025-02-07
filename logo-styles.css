@@ -1,51 +1,66 @@
-/* HEADER CONTAINER */
+/* Header Container */
 .header-container {
     display: flex;
+    width: 100%;
+    height: 120px; /* Adjust as needed */
+    background: linear-gradient(to right, #b3b3b3, #5a5a5a, #1a1a1a); /* Smooth transition */
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 120px; /* Adjust this if needed */
-    background: linear-gradient(to right, #A8A8A8, #3D3D3D, #121212); /* Faster transition */
-    border-bottom: 3px solid #B30000; /* Metallic red border */
+    padding: 0 20px;
+    border-bottom: 3px solid #b30000; /* Metallic red line */
 }
 
-/* LEFT SECTION: LOGO */
+/* Left Section (Logo Area) */
 .header-left {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%;
-    height: 100%;
-    background: rgba(50, 50, 50, 0.6); /* Subtle blend */
+    flex: 0.3; /* Takes up 30% of header */
+    background: linear-gradient(to right, #d1d1d1, #a1a1a1, #777); /* Lighter gradient */
+    padding: 10px 0;
 }
 
-/* LOGO */
-.brand-logo {
-    width: 180px; /* Reduced by 10% */
-    height: auto;
-    position: relative;
-    top: 5px; /* Moves logo up */
-}
-
-/* RIGHT SECTION: NAVIGATION */
-.header-right {
+/* Center Logo */
+.logo-wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 100%;
+    justify-content: center;
+    width: 100%;
 }
 
-/* NAVIGATION LINKS */
+.brand-logo {
+    width: 140px; /* Adjusted size */
+    height: auto;
+}
+
+/* Right Section (Navigation) */
+.header-right {
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation Links */
 .navigation a {
-    color: #D1D1D1; /* Metallic silver */
-    text-decoration: none;
+    font-family: 'Garamond', serif;
     font-size: 18px;
     font-weight: bold;
+    text-decoration: none;
+    color: #c0c0c0; /* Metallic silver */
     margin: 0 20px;
     transition: color 0.3s ease-in-out;
 }
 
 .navigation a:hover {
-    color: #B30000; /* Metallic red hover effect */
+    color: #ff3333; /* Subtle red on hover */
+}
+
+/* Fix Blue Highlight Issue */
+.navigation a:focus,
+.navigation a:active,
+.tip-box p:focus,
+.tip-box p:active {
+    outline: none;
+    color: #c0c0c0 !important; /* Forces metallic silver */
 }
