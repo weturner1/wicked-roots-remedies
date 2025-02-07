@@ -3,8 +3,8 @@
     width: 100%;
     height: 120px;
     background: linear-gradient(to right, #C0C0C0, #8B7D6B, #3E3A36, #0A0A0A); /* Metallic silver → grayish brown → metallic black */
-    border-top: 3px solid #8B0000; /* Metallic red top border */
-    border-bottom: 3px solid #8B0000; /* Metallic red bottom border */
+    border-top: 3px solid #1C1C1C; /* Metallic black top border */
+    border-bottom: 3px solid #1C1C1C; /* Metallic black bottom border */
     display: flex;
     align-items: center;
     justify-content: center;
