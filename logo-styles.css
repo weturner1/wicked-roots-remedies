@@ -11,20 +11,23 @@
 .header-logo-box {
     background: url('background.png') no-repeat center center;
     background-size: cover;
-    padding: 15px; /* Increased padding */
+    padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px; /* Wider for bigger logo */
-    height: 100px; /* Taller for proper spacing */
+    width: 220px; /* Wider to accommodate bigger logo */
+    height: 110px; /* Slightly taller */
+    position: relative;
 }
 
-/* LOGO - INCREASED SIZE & CENTERED */
+/* LOGO - INCREASED BY 20% & MOVED UP */
 .brand-logo {
-    width: 170px; /* Larger logo */
+    width: 204px; /* 20% increase from 170px */
     height: auto;
+    position: relative;
+    top: -5px; /* Moves logo up slightly */
 }
 
 /* NAVIGATION LINKS */
