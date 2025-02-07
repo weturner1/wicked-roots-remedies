@@ -15,9 +15,9 @@
 /* Logo Styling */
 .brand-logo-container {
     position: absolute;
-    top: 50%;
+    top: 35%;  /* Moves the logo up */
     left: 50%;
-    transform: translate(-50%, -55%); /* Moves logo up to center it */
+    transform: translate(-50%, -50%);
 }
 
 .brand-logo {
@@ -31,7 +31,7 @@
     display: flex;
     gap: 25px;
     position: absolute;
-    bottom: 5px; /* Adjusted to balance with the logo */
+    bottom: 10px; /* Adjusted to balance with the logo */
 }
 
 .nav-links a {
