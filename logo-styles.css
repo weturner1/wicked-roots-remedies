@@ -1,0 +1,18 @@
+/* logo-styles.css */
+
+/* Logo Styling */
+.brand-logo {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 40px auto 20px auto;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #6e6e6e, #ffffff) 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
