@@ -1,7 +1,7 @@
 /* Header Container */
 .brand-header {
     width: 100%;
-    height: 120px; /* Reduced header height */
+    height: 120px; /* Adjusted header height */
     background-color: rgba(245, 239, 224, 0.95); /* Matches calculator panel color */
     display: flex;
     flex-direction: column;
@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 /* Logo Box */
@@ -33,8 +34,9 @@
 
 /* Logo */
 .brand-logo {
-    width: 200px; /* Adjusted to keep the size consistent */
-    height: auto;
+    width: auto; /* Ensures proportional scaling */
+    height: 90px; /* Adjusted to fit within header height */
+    max-width: 90%; /* Ensures the logo does not stretch */
     display: block;
 }
 
