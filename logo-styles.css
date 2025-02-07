@@ -13,13 +13,13 @@
         #5D5A56 60%,  /* Darker Metallic Grey */
         #1A1A1A 100%  /* Deep Black (END) */
     );
-    border-top: 4px solid #5D0000;  /* Metallic Red Line at Top */
-    border-bottom: 4px solid #5D0000;  /* Red Line at Bottom for Symmetry */
+    border-top: 4px solid #0A0A0A;  /* Metallic Black Line at Top */
+    border-bottom: 4px solid #0A0A0A;  /* Metallic Black Line at Bottom */
 }
 
 /* Logo */
 .header-logo {
-    height: 92px; /* Increased by 5% from previous 88px */
+    height: 92px; /* Maintains 5% increase */
     margin-left: 88px; /* Keeps the 36px rightward adjustment */
 }
 
