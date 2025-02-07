@@ -20,17 +20,13 @@
     height: 80px; /* Ensures it remains centered within header */
 }
 
-/* Logo Box */
+/* Logo Box - Removed Metallic Black */
 .brand-logo-box {
     padding: 5px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #2c2c2c; /* Thin metallic black border */
-    box-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.5),
-        -2px -2px 5px rgba(255, 255, 255, 0.2); /* Light dimensional effect */
 }
 
 /* Logo */
