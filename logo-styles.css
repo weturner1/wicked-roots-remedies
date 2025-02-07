@@ -1,44 +1,50 @@
-/* Header Panel */
-.header {
+/* Header Container */
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right, rgba(120, 100, 80, 0.8), #0a0a0a); /* Smooth fade from parchment to black */
-    padding: 15px 30px;
-    position: relative;
-    border-bottom: 3px solid #B22222; /* Metallic red bottom border */
+    width: 100%;
+    height: 120px; /* Reduced height */
+    background: linear-gradient(to right, #c0c0c0, #444, #1e1e1e); /* Light silver to dark blend */
+    padding: 10px 30px;
+    border-bottom: 4px solid #822727; /* Metallic red bottom border */
 }
 
-/* Logo Box */
-.logo-container {
+/* Left Section with Logo */
+.header-left {
+    flex: 1;
     display: flex;
     align-items: center;
-    padding: 15px;
-    background: linear-gradient(to right, rgba(120, 100, 80, 0.9), rgba(10, 10, 10, 0)); /* Gradient to blend into header */
-    border-radius: 8px;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); /* Soft inner shadow */
 }
 
-/* Logo Image */
+/* Logo Styling */
 .brand-logo {
-    width: 140px; /* 20% increase */
+    width: 110px; /* Increased logo size */
     height: auto;
-    display: block;
+    margin-left: 20px;
 }
 
-/* Navigation Links */
-.nav-links {
+/* Right Section with Navigation */
+.header-right {
+    flex: 3;
     display: flex;
-    gap: 20px;
+    justify-content: center;
 }
 
-.nav-links a {
-    font-size: 1rem;
-    color: #C0C0C0; /* Metallic silver */
+/* Navigation Styling */
+.navigation {
+    display: flex;
+    gap: 40px;
+}
+
+.navigation a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c0c0c0; /* Metallic silver */
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
-.nav-links a:hover {
-    color: #B22222; /* Metallic red on hover */
+.navigation a:hover {
+    color: #ffcc00; /* Gold hover effect */
 }
