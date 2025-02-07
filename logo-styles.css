@@ -26,14 +26,14 @@
     transform: translateX(-50%); /* Keeps logo in the center */
 }
 
-/* Navigation Links - Placed to the Right */
+/* Navigation Links - Adjusted Left */
 .nav-links {
     display: flex;
     gap: 30px;
     font-size: 18px;
     font-weight: bold;
     position: absolute;
-    right: 20px; /* Positions links to the right of the header */
+    right: 148px; /* Moves links ~2 inches to the left */
     bottom: 15px; /* Aligns with the bottom of the header */
 }
 
