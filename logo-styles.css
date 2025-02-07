@@ -17,12 +17,12 @@
     justify-content: flex-start;
     flex: 0.3;
     position: relative;
-    top: -12px; /* Moves logo higher to align with navigation */
+    top: -12px; /* Maintains alignment with navigation */
 }
 
 /* Logo */
 .brand-logo {
-    width: 170px; /* Increased another 10% (Total: 20% from original) */
+    width: 187px; /* Increased another 10% (Total: 30% from original) */
     height: auto;
 }
 
