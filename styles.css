@@ -21,7 +21,7 @@ body {
     background: linear-gradient(to bottom, #F7F4F1, #EDEAE5); /* Soft parchment gradient */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle drop shadow */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for dimensionality */
     max-width: 500px;
     margin: auto;
     margin-bottom: 30px;
@@ -32,17 +32,18 @@ body {
     align-items: center;
 }
 
-/* Add subtle vine pattern in the panel corners */
+/* Enhanced vine engraving effect */
 .container::before, .ratio-container::before {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     background: url('vine-pattern.png') no-repeat;
     background-size: contain;
-    top: -10px;
-    left: -10px;
-    opacity: 0.2;
+    top: -15px;
+    left: -15px;
+    opacity: 0.5; /* Increased opacity for visibility */
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Simulated engraving effect */
 }
 
 /* Buttons */
@@ -60,10 +61,10 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-/* Shimmer effect on hover */
+/* Shimmer effect changed to metallic silver */
 button:hover {
-    background: linear-gradient(to right, #282828, #383838, #282828);
-    box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+    background: linear-gradient(to right, #C0C0C0, #E0E0E0, #C0C0C0);
+    box-shadow: 0 0 8px rgba(192, 192, 192, 0.6);
 }
 
 /* Tip Box */
@@ -139,7 +140,6 @@ button:hover {
     font-size: 1.2rem;
     font-weight: bold;
     color: #C00000; /* Metallic red */
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
 }
 
 /* Form Input Fields */
