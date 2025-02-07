@@ -7,17 +7,16 @@
 }
 
 .brand-logo-box {
-    width: 270px; /* Slightly larger than the logo */
+    width: 260px; /* Slightly larger than the logo */
     height: auto;
-    padding: 12px;
+    padding: 8px; /* Reduced padding */
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent; /* No background fill */
-    border: 4px solid #000000; /* Thicker solid black border */
-    box-shadow: 
-        0 4px 8px rgba(0, 0, 0, 0.5); /* Outer shadow for dimensionality */
+    border: 4px solid #000000; /* Solid black border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Outer shadow for dimensionality */
 }
 
 .brand-logo {
