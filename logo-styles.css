@@ -6,6 +6,23 @@
     position: relative;
 }
 
+.brand-logo-box {
+    width: 270px; /* Slightly larger than the logo */
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #0F0F0F, #292929); /* True metallic black */
+    border: 3px solid #1A1A1A; /* Darker black to add definition */
+    box-shadow: 
+        inset 2px 2px 4px rgba(255, 255, 255, 0.2), /* Inner metallic reflection */
+        inset -2px -2px 4px rgba(0, 0, 0, 0.7), /* Inner depth */
+        0px 6px 10px rgba(0, 0, 0, 0.9); /* Outer drop shadow */
+}
+
+/* Logo itself */
 .brand-logo {
     width: 250px;
     height: auto;
@@ -14,30 +31,16 @@
     z-index: 2;
 }
 
-/* Metallic Black Border */
-.brand-logo-box {
-    width: 270px; /* Slightly larger than logo for spacing */
-    height: auto;
-    padding: 10px;
-    border: 3px solid #3A3A3A; /* Metallic black effect */
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(145deg, #1C1C1C, #3A3A3A); /* Subtle metallic black */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); /* Adds depth */
-}
-
-/* Dimensional Shadow Under Logo */
+/* Stronger shadow under the logo */
 .brand-logo-box::after {
     content: "";
     position: absolute;
     width: 90%;
-    height: 20px;
-    bottom: -12px;
+    height: 25px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
-    opacity: 0.7;
+    background: radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%);
+    opacity: 0.9;
     border-radius: 50%;
 }
