@@ -1,48 +1,36 @@
-/* Header Styling */
+/* Header Container */
 .header-container {
     width: 100%;
-    height: 80px; /* Keeps header at proper height */
+    height: 120px;
+    background: linear-gradient(to right, #c0c0c0, #a67c52, #726659, #0a0a0a); /* Smooth metallic blend */
+    border-top: 3px solid #8B0000; /* Metallic red top border */
+    border-bottom: 3px solid #8B0000; /* Metallic red bottom border */
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers content in header */
-    padding: 10px 20px;
-    background: linear-gradient(to right, 
-        #C0C0C0 0%,   /* Metallic Silver */
-        #A49789 20%,  /* Soft Tan */
-        #8B8073 40%,  /* Tan-Grey Blend */
-        #5D5A56 60%,  /* Darker Metallic Grey */
-        #1A1A1A 100%  /* Deep Black */
-    );
-    border-top: 4px solid #0A0A0A;  /* Metallic Black Line at Top */
-    border-bottom: 4px solid #0A0A0A;  /* Metallic Black Line at Bottom */
+    justify-content: center;
     position: relative;
 }
 
-/* Logo - Centered in Header */
+/* Centered Logo */
 .header-logo {
-    height: 92px; /* Maintains size */
+    height: 92px; /* Maintains logo size */
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Centers logo properly */
+    left: 49%; /* Adjusted slightly left */
+    transform: translateX(-50%); /* Ensures exact center */
 }
 
-/* Navigation Links - Adjusted */
+/* Navigation Links */
 .nav-links {
-    display: flex;
-    gap: 30px;
-    font-size: 18px;
-    font-weight: bold;
     position: absolute;
-    right: 150px; /* Keeps links balanced */
-    bottom: 15px; /* Aligns with header */
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nav-links a {
+    color: #C0C0C0; /* Metallic silver text */
     text-decoration: none;
-    color: #D6D6D6;  /* Metallic Silver for readability */
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #FFFFFF; /* Brightens when hovered */
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
 }
