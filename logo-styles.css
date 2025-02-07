@@ -1,35 +1,41 @@
 /* Header styling */
 .site-header {
     background-color: #f0f0f0; /* Match this to your calculator panes' background color */
-    padding: 10px 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 20px 0;
+    position: relative;
 }
 
 /* Logo container */
-.brand-logo-container {
+.logo-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 5px;
-    border: 2px solid #333; /* Metallic black border */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for dimensionality */
+    margin-bottom: 20px; /* Space between logo and navigation */
 }
 
 /* Logo image */
 .brand-logo {
-    width: 150px; /* Set a specific width */
+    width: 150px; /* Adjust size as needed */
     height: auto;
-    object-fit: contain; /* Maintain aspect ratio */
 }
 
 /* Navigation styling */
+.navigation {
+    position: absolute;
+    bottom: 10px; /* Adjust distance from bottom */
+    width: 100%;
+}
+
 .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
