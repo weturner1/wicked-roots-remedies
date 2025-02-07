@@ -13,7 +13,7 @@
 
 /* LOGO STYLING */
 .header-logo {
-    height: 90px; /* Keeping size intact */
+    height: 72px; /* Reduced size by 20% */
     width: auto;
     margin-left: 20px; /* Adjust if needed */
     align-self: center; /* Ensures vertical centering */
