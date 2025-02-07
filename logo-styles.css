@@ -1,49 +1,44 @@
-/* HEADER CONTAINER - FLEX LAYOUT */
-.header-container {
+/* Header Panel */
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #0a0a0a; /* Dark background for nav */
-    padding: 10px 20px;
+    background: linear-gradient(to right, rgba(120, 100, 80, 0.8), #0a0a0a); /* Smooth fade from parchment to black */
+    padding: 15px 30px;
+    position: relative;
+    border-bottom: 3px solid #B22222; /* Metallic red bottom border */
 }
 
-/* LEFT LOGO BOX - MATCHES MAIN BACKGROUND & CENTERED */
-.header-logo-box {
-    background: url('background.png') no-repeat center center;
-    background-size: cover;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+/* Logo Box */
+.logo-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 220px; /* Wider to accommodate bigger logo */
-    height: 110px; /* Slightly taller */
-    position: relative;
+    padding: 15px;
+    background: linear-gradient(to right, rgba(120, 100, 80, 0.9), rgba(10, 10, 10, 0)); /* Gradient to blend into header */
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); /* Soft inner shadow */
 }
 
-/* LOGO - INCREASED BY 20% & MOVED UP */
+/* Logo Image */
 .brand-logo {
-    width: 204px; /* 20% increase from 170px */
+    width: 140px; /* 20% increase */
     height: auto;
-    position: relative;
-    top: -5px; /* Moves logo up slightly */
+    display: block;
 }
 
-/* NAVIGATION LINKS */
+/* Navigation Links */
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .nav-links a {
-    color: #c0c0c0; /* Metallic silver */
+    font-size: 1rem;
+    color: #C0C0C0; /* Metallic silver */
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-    color: #f4f4f4;
+    color: #B22222; /* Metallic red on hover */
 }
