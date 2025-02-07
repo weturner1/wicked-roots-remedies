@@ -1,163 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
-
-body {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-    background: url('background.png') no-repeat center center fixed;
-    background-size: cover;
-    color: #2B2B2B; /* Deep charcoal for better contrast */
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #c0c0c0, #826f5d, #1a1a1a); /* Metallic Silver to Dark */
+    border-top: 3px solid #8B0000; /* Metallic Red Line */
+    border-bottom: 3px solid #1a1a1a; /* Metallic Black */
 }
 
 /* Logo Styling */
-.brand-logo {
-    width: 250px;
-    height: auto;
-    display: block;
-    margin: 40px auto 20px auto;
-}
-
-/* Panel Styling */
-.container, .ratio-container {
-    background: linear-gradient(to bottom, #F7F4F1, #EDEAE5); /* Soft parchment gradient */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for dimensionality */
-    max-width: 500px;
-    margin: auto;
-    margin-bottom: 30px;
-    color: #3e2723;
-    border: 2px solid #282828; /* Metallic black border */
+.logo-container {
+    flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-/* Enhanced vine engraving effect */
-.container::before, .ratio-container::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background: url('vine-pattern.png') no-repeat;
-    background-size: contain;
-    top: -15px;
-    left: -15px;
-    opacity: 0.5; /* Increased opacity for visibility */
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Simulated engraving effect */
+.brand-logo {
+    max-height: 80px;
+    margin-left: 20px;
 }
 
-/* Buttons */
-button {
-    background: linear-gradient(to bottom, #282828, #1E1E1E); /* Metallic black */
-    color: white;
-    padding: 12px 18px;
-    border: 2px solid #C0C0C0; /* Metallic silver outline */
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 6px;
-    margin-top: 10px;
-    width: 220px;
+/* Company Name & Tagline */
+.company-name {
+    flex: 2;
     text-align: center;
-    transition: all 0.3s ease-in-out;
+    font-family: 'Cloister Black', serif;
+    color: #D8D8D8; /* Metallic Silver */
 }
 
-/* Shimmer effect changed to metallic silver */
-button:hover {
-    background: linear-gradient(to right, #C0C0C0, #E0E0E0, #C0C0C0);
-    box-shadow: 0 0 8px rgba(192, 192, 192, 0.6);
+.company-name h1 {
+    font-size: 32px;
+    margin: 0;
 }
 
-/* Tip Box */
-.tip-box {
-    background: rgba(247, 244, 241, 0.95);
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 30px auto 40px auto;
-    border: 2px solid #5a1e1e;
-    position: relative;
-}
-
-/* Glowing effect for tip icon */
-.tip-box::before {
-    content: "🌿";
-    position: absolute;
-    left: 15px;
-    font-size: 1.4rem;
-    color: #008000;
-    text-shadow: 0 0 6px rgba(0, 255, 0, 0.7);
-}
-
-/* Footer Styling */
-.footer {
-    background: linear-gradient(to right, #282828, #1E1E1E); /* Metallic black */
-    color: white;
-    padding: 12px;
-    text-align: center;
-    font-size: 0.9rem;
-    width: 100%;
-    position: relative;
-}
-
-/* Thin metallic red line at the top of footer */
-.footer::before {
-    content: "";
-    display: block;
-    height: 3px;
-    background: linear-gradient(to right, #8B0000, #C00000, #8B0000);
-    width: 100%;
-    position: absolute;
-    top: 0;
-}
-
-/* Make email hyperlink metallic silver */
-.footer a {
-    color: #C0C0C0;
-    text-decoration: underline;
-    transition: color 0.3s ease-in-out;
-}
-
-.footer a:hover {
+.tagline {
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
     color: #E0E0E0;
+    letter-spacing: 2px;
+    margin-top: 5px;
 }
 
-/* Table Styling */
-.styled-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: #FAFAFA; /* Matches input fields */
+/* Navigation Links */
+.nav-links {
+    flex: 1;
+    text-align: right;
 }
 
-/* Add soft shadow effect on hover */
-.styled-table tr:hover {
-    background: rgba(240, 240, 240, 0.8);
-    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+.nav-links a {
+    font-family: 'Cinzel Decorative', serif;
+    color: #D8D8D8;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
 }
 
-/* Calculator Output Text */
-.result {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #C00000; /* Metallic red */
-}
-
-/* Form Input Fields */
-input, select {
-    width: 85%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #282828; /* Metallic black */
-    border-radius: 5px;
-    background: #FFFFFF; /* Matches table background */
-    color: #3e2723;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Calculator Title Font */
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #282828; /* Metallic black */
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+.nav-links a:hover {
+    color: #8B0000; /* Metallic Red on Hover */
 }
