@@ -10,7 +10,22 @@
 </head>
 <body>
 
+    <!-- Header with logo -->
     <div id="header"></div>
+
+    <!-- Tips Section -->
+    <div id="tips"></div>
+
+    <!-- Calculators -->
+    <div id="calculator1"></div>
+    <div id="calculator2"></div>
+    <div id="calculator3"></div>
+
+    <!-- Ratios Section -->
+    <div id="ratios"></div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
 
     <script>
         function loadComponent(id, file) {
@@ -18,7 +33,15 @@
                 .then(response => response.text())
                 .then(html => document.getElementById(id).innerHTML = html);
         }
+
+        // Load all page sections dynamically
         loadComponent("header", "header.html");
+        loadComponent("tips", "tips.html");
+        loadComponent("calculator1", "calculator1.html");
+        loadComponent("calculator2", "calculator2.html");
+        loadComponent("calculator3", "calculator3.html");
+        loadComponent("ratios", "ratios.html");
+        loadComponent("footer", "footer.html");
     </script>
 
 </body>
