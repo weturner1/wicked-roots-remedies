@@ -1,8 +1,8 @@
 /* Adjust Header Height & Gradient */
 .header-container {
     width: 100%;
-    height: 80px; /* Adjusted height */
-    background: linear-gradient(to right, #8B5A2B 15%, #A9A9A9 50%, #0A0A0A 100%);
+    height: 65px; /* Reduced by 30% */
+    background: linear-gradient(to right, #8B5A2B 10%, #A9A9A9 40%, #0A0A0A 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 40px;
+    gap: 50px;
 }
 
 .nav-links a {
@@ -31,15 +31,15 @@
     color: #FF3333;
 }
 
-/* Move Logo to Right */
+/* Position Logo */
 .brand-logo-container {
     position: absolute;
-    right: 12%;
-    transform: translateY(5px); /* Move logo slightly down */
+    right: 20%; /* Moves it left toward Calculator 1 */
+    transform: translateY(5px); /* Adjust vertical position */
 }
 
 /* Logo Size */
 .brand-logo {
-    width: 220px; /* Slightly larger */
+    width: 240px; /* Increased slightly */
     height: auto;
 }
