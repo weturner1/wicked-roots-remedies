@@ -10,17 +10,18 @@
     border-bottom: 4px solid #B22222; /* Metallic red bottom border */
 }
 
-/* BRAND LOGO - Aligned to the LEFT */
+/* BRAND LOGO - Adjusted for size & centering */
 .brand-logo-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height: 100%; /* Ensures it aligns with the nav links */
+    margin-left: 40px; /* Moves it slightly right */
 }
 
 .brand-logo {
-    width: 90px; /* Adjust size */
+    width: 120px; /* Increased by 20% */
     height: auto;
-    margin-left: 20px; /* Push it away from the left edge */
 }
 
 /* NAVIGATION LINKS - Centered */
@@ -29,6 +30,7 @@
     justify-content: center;
     flex-grow: 1;
     gap: 30px;
+    align-items: center; /* Centers vertically */
 }
 
 .nav-links a {
