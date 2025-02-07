@@ -1,3 +1,13 @@
+/* General Page Styling */
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+    color: #D8D8D8;
+    margin: 0;
+    padding: 0;
+}
+
 /* Header Styling */
 .header {
     display: flex;
@@ -22,27 +32,6 @@
     margin-left: 20px;
 }
 
-/* Company Name & Tagline */
-.company-name {
-    flex: 2;
-    text-align: center;
-    font-family: 'Cloister Black', serif;
-    color: #D8D8D8; /* Metallic Silver */
-}
-
-.company-name h1 {
-    font-size: 32px;
-    margin: 0;
-}
-
-.tagline {
-    font-size: 18px;
-    font-family: 'Great Vibes', cursive;
-    color: #E0E0E0;
-    letter-spacing: 2px;
-    margin-top: 5px;
-}
-
 /* Navigation Links */
 .nav-links {
     flex: 1;
@@ -59,4 +48,29 @@
 
 .nav-links a:hover {
     color: #8B0000; /* Metallic Red on Hover */
+}
+
+/* Calculator Section */
+.calculator-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    margin: auto;
+}
+
+.calculator-container h2 {
+    text-align: center;
+    color: #000;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #1a1a1a;
+    color: #D8D8D8;
+    font-size: 14px;
+    border-top: 3px solid #8B0000;
 }
