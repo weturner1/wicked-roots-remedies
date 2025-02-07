@@ -1,13 +1,16 @@
 /* Header styling */
 .site-header {
     background-color: #f0f0f0; /* Match this to your calculator panes' background color */
-    padding: 10px 0; /* Adjusts the header height */
-    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Logo container */
 .brand-logo-container {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: 5px;
     border: 2px solid #333; /* Metallic black border */
     border-radius: 5px;
@@ -16,7 +19,26 @@
 
 /* Logo image */
 .brand-logo {
-    width: 100%;
+    width: 150px; /* Set a specific width */
     height: auto;
-    display: block;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Navigation styling */
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #007BFF; /* Change to your desired hover color */
 }
