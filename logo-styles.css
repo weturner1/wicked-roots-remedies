@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100px; /* Slightly reduced height */
+    height: 90px; /* Slightly reduced height */
     border-bottom: 2px solid rgba(192, 192, 192, 0.6);
 }
 
@@ -16,11 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2px; /* Reduced space between logo and navigation */
+    margin-bottom: -5px; /* Adjusted to lower logo slightly */
 }
 
 .brand-logo {
-    width: 110px; /* Slightly smaller for better proportion */
+    width: 100px; /* Fit within header */
     height: auto;
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
 }
@@ -29,7 +29,7 @@
 .nav-links {
     display: flex;
     gap: 20px;
-    margin-top: -10px; /* Moves the navigation links up */
+    margin-top: -15px; /* Moves the navigation links up */
 }
 
 .nav-links a {
@@ -42,4 +42,12 @@
 
 .nav-links a:hover {
     color: #ff5555;
+}
+
+/* Tip Box Refinement */
+.tip-container {
+    background: rgba(255, 255, 255, 0.85); /* Slightly darker background */
+    border: 2px solid rgba(192, 192, 192, 0.7); /* Darker outline */
+    padding: 8px 15px;
+    border-radius: 8px;
 }
