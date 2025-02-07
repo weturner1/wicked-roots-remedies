@@ -7,23 +7,23 @@
     padding: 10px 20px;
 }
 
-/* LEFT LOGO BOX - MATCHES MAIN BACKGROUND */
+/* LEFT LOGO BOX - MATCHES MAIN BACKGROUND & CENTERED */
 .header-logo-box {
     background: url('background.png') no-repeat center center;
     background-size: cover;
-    padding: 10px;
+    padding: 15px; /* Increased padding */
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 180px; /* Fixed width */
-    height: 80px; /* Adjusted height */
+    width: 200px; /* Wider for bigger logo */
+    height: 100px; /* Taller for proper spacing */
 }
 
-/* LOGO */
+/* LOGO - INCREASED SIZE & CENTERED */
 .brand-logo {
-    width: 140px; /* Increase size */
+    width: 170px; /* Larger logo */
     height: auto;
 }
 
