@@ -4,28 +4,28 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 90px; /* Slightly reduced header height */
-    background: linear-gradient(to right, #d4c4af 8%, #82776A 20%, #3e3e3e 50%, #1a1a1a 100%);
+    height: 85px; /* Slightly reduced to balance */
+    background: linear-gradient(to right, #d4c4af 5%, #82776A 15%, #3e3e3e 50%, #1a1a1a 100%);
     padding: 10px 30px;
-    border-bottom: 4px solid #822727; /* Metallic red bottom border */
+    border-bottom: 4px solid #822727; /* Metallic red line at the bottom */
 }
 
 /* Left Section with Logo */
 .header-left {
     flex: 1;
     display: flex;
-    align-items: flex-start; /* Moves the logo higher */
+    align-items: center; /* Centers logo vertically */
     justify-content: center;
-    position: relative; /* Keeps logo inside header */
-    padding-top: 5px; /* Adjusts the vertical position */
+    position: relative;
+    padding-top: 5px;
 }
 
 /* Logo Styling */
 .brand-logo {
-    width: 190px; /* Increased logo size slightly */
+    width: 200px; /* Adjusted for better fit */
     height: auto;
     position: relative;
-    top: -5px; /* Moves logo higher */
+    top: 0px; /* Keeps logo inside header */
 }
 
 /* Right Section with Navigation */
