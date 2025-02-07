@@ -1,40 +1,40 @@
 /* Header Styling */
 .header-container {
     width: 100%;
-    height: 80px; /* Maintains proper header height */
+    height: 80px; /* Keeps header at proper height */
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Spaces elements evenly */
+    justify-content: center; /* Centers content in header */
     padding: 10px 20px;
     background: linear-gradient(to right, 
-        #C0C0C0 0%,   /* Metallic Silver (START) */
+        #C0C0C0 0%,   /* Metallic Silver */
         #A49789 20%,  /* Soft Tan */
         #8B8073 40%,  /* Tan-Grey Blend */
         #5D5A56 60%,  /* Darker Metallic Grey */
-        #1A1A1A 100%  /* Deep Black (END) */
+        #1A1A1A 100%  /* Deep Black */
     );
     border-top: 4px solid #0A0A0A;  /* Metallic Black Line at Top */
     border-bottom: 4px solid #0A0A0A;  /* Metallic Black Line at Bottom */
     position: relative;
 }
 
-/* Logo - Centered */
+/* Logo - Centered in Header */
 .header-logo {
-    height: 92px; /* Maintains 5% increase */
+    height: 92px; /* Maintains size */
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Keeps logo in the center */
+    transform: translateX(-50%); /* Centers logo properly */
 }
 
-/* Navigation Links - Adjusted Left */
+/* Navigation Links - Adjusted */
 .nav-links {
     display: flex;
     gap: 30px;
     font-size: 18px;
     font-weight: bold;
     position: absolute;
-    right: 148px; /* Moves links ~2 inches to the left */
-    bottom: 15px; /* Aligns with the bottom of the header */
+    right: 150px; /* Keeps links balanced */
+    bottom: 15px; /* Aligns with header */
 }
 
 .nav-links a {
