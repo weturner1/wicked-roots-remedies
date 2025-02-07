@@ -1,94 +1,47 @@
-/* General Page Styling */
+/* General Styles */
 body {
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Cinzel', serif;
-    color: #D8D8D8;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
-/* Header Styling */
+/* Header Styles */
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #c0c0c0, #826f5d, #1a1a1a); /* Metallic Silver to Dark */
-    border-top: 3px solid #8B0000; /* Metallic Red */
-    border-bottom: 3px solid #1a1a1a; /* Metallic Black */
-    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #C0C0C0, #8B7D6B, #1C1C1C); /* Metallic silver → Brownish-gray → Black */
+    border-top: 3px solid black;
+    border-bottom: 3px solid red;
 }
 
-/* Logo Styling */
+/* Logo */
 .logo-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
+    margin-left: 20px;
 }
 
 .brand-logo {
-    max-height: 120px; /* Adjusted for readability */
-    margin-left: 30px;
-}
-
-/* Company Name & Tagline */
-.company-info {
-    flex: 2;
-    text-align: center;
-}
-
-.company-name {
-    font-size: 32px;
-    font-family: 'Uncial Antiqua', serif;
-    color: #D8D8D8;
-}
-
-.company-tagline {
-    font-size: 16px;
-    font-style: italic;
-    color: #D8D8D8;
+    width: 150px;
+    height: auto;
 }
 
 /* Navigation Links */
 .nav-links {
-    flex: 1;
-    text-align: right;
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
 }
 
 .nav-links a {
-    font-family: 'Cinzel Decorative', serif;
-    color: #D8D8D8;
-    text-decoration: none;
+    color: #C0C0C0;
     font-size: 18px;
-    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-links a:hover {
-    color: #8B0000; /* Metallic Red on Hover */
-}
-
-/* Calculator Section */
-.calculator-container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    max-width: 500px;
-    margin: auto;
-}
-
-.calculator-container h2 {
-    text-align: center;
-    color: #000;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 10px;
-    background: #1a1a1a;
-    color: #D8D8D8;
-    font-size: 14px;
-    border-top: 3px solid #8B0000;
+    color: red;
 }
