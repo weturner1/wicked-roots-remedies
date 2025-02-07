@@ -16,25 +16,25 @@ body {
     margin: 40px auto 20px auto; /* Centers the logo with spacing */
 }
 
-/* Panel Styling (Updated for Lighter Background) */
+/* Panel Styling (Lighter Background for Better Contrast) */
 .container, .ratio-container {
-    background: rgba(60, 60, 60, 0.85); /* Lighter metallic gunmetal */
+    background: rgba(85, 85, 85, 0.85); /* Even lighter gunmetal grey */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     max-width: 450px;
     margin: auto;
     margin-bottom: 30px;
-    color: #e0e0e0; /* Light silver text */
+    color: #e6e6e6; /* Lighter silver text */
     border: 2px solid #8B0000; /* Metallic red accent */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Title Text */
+/* Title Text for Calculators & Ratios */
 h2 {
-    color: #8B0000; /* Metallic deep red */
+    color: #1a1a1a; /* Metallic black */
     font-weight: bold;
 }
 
@@ -83,20 +83,20 @@ button:hover {
 }
 
 .styled-table th {
-    background-color: #4a4a4a; /* Lighter gunmetal black */
-    color: white;
+    background-color: #757575; /* Lighter metallic gunmetal */
+    color: black;
 }
 
 /* Ratio Section - Now Matches Calculator Panels */
 .ratio-container {
-    background: rgba(60, 60, 60, 0.85); /* Same as calculator panels */
+    background: rgba(85, 85, 85, 0.85); /* Same as calculator panels */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     max-width: 450px;
     margin: auto;
     margin-bottom: 30px;
-    color: #e0e0e0; /* Light silver text */
+    color: #e6e6e6; /* Lighter silver text */
     border: 2px solid #8B0000; /* Metallic red accent */
     display: flex;
     flex-direction: column;
@@ -105,14 +105,14 @@ button:hover {
 
 /* Tip Box */
 .tip-box {
-    background: rgba(20, 20, 20, 0.95); /* Darker tooltips */
+    background: rgba(45, 45, 45, 0.95); /* Darker tooltips */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     max-width: 450px;
     margin: 30px auto 40px auto;
     border: 2px solid #8B0000; /* Metallic red border */
-    color: #e0e0e0; /* Light silver text */
+    color: #e6e6e6; /* Lighter silver text */
 }
 
 /* Calculator Output Text */
