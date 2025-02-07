@@ -3,22 +3,14 @@
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
-    background: url('background.png') no-repeat center center fixed;
+    background: url('https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/main/dark-parchment-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #1e1e1e;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-/* Dark Mode */
-.dark-mode {
-    background: url('YOUR_GITHUB_IMAGE_URL') no-repeat center center fixed;
-    background-size: cover;
-    color: #f8f8f8;
 }
 
 /* Logo Styling */
 .brand-logo {
-    width: 250px; /* Adjust to prevent skewing */
+    width: 250px; /* Adjusted to prevent skewing */
     height: auto;
     display: block;
     margin: 40px auto 20px auto; /* Centers the logo with spacing */
@@ -40,13 +32,6 @@ body {
     align-items: center;
 }
 
-/* Dark Mode Panel Styling */
-.dark-mode .container {
-    background: rgba(60, 60, 60, 0.9); /* Lighter grey for better readability */
-    color: #f8f8f8;
-    border-color: gold;
-}
-
 /* Buttons */
 button {
     background-color: #5a1e1e;
@@ -66,12 +51,6 @@ button:hover {
     background-color: #822727;
 }
 
-/* Dark Mode Button Updates */
-.dark-mode button {
-    background-color: gold;
-    color: black;
-}
-
 /* Footer Styling */
 .footer {
     background-color: #5a1e1e;
@@ -82,12 +61,6 @@ button:hover {
     position: relative;
     bottom: -20px;
     width: 100%;
-}
-
-/* Dark Mode Footer */
-.dark-mode .footer {
-    background-color: gold;
-    color: black;
 }
 
 /* Table Styling */
@@ -105,11 +78,6 @@ button:hover {
 .styled-table th {
     background-color: #f4f4f4;
     color: black;
-}
-
-.dark-mode .styled-table th {
-    background-color: #444;
-    color: white;
 }
 
 /* Calculator Output Text */
