@@ -16,11 +16,13 @@
     align-items: center;
     justify-content: flex-start; /* Keeps it on the left */
     flex: 0.3; /* Adjust width as needed */
+    position: relative;
+    top: -8px; /* Moves logo up */
 }
 
 /* Logo */
 .brand-logo {
-    width: 140px; /* Adjusted size */
+    width: 154px; /* Increased size by 10% */
     height: auto;
 }
 
