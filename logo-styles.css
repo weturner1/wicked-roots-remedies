@@ -11,9 +11,9 @@
     position: relative;
 }
 
-/* Centered Logo (Increased by 20%) */
+/* Centered Logo (Increased by 30% Total) */
 .header-logo {
-    height: 110px; /* Previously 92px → Increased by 20% */
+    height: 120px; /* Previously 110px → Increased by another 10% */
     position: absolute;
     left: 49%;
     transform: translateX(-50%);
