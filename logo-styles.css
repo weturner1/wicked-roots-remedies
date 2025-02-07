@@ -3,16 +3,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #0a0a0a; /* Keep dark background for nav */
+    background: #0a0a0a; /* Dark background for nav */
     padding: 10px 20px;
 }
 
-/* LEFT LOGO BOX */
+/* LEFT LOGO BOX - MATCHES MAIN BACKGROUND */
 .header-logo-box {
-    background: linear-gradient(to bottom, #d7d7d7, #b0b0b0); /* Metallic silver gradient */
+    background: url('background.png') no-repeat center center;
+    background-size: cover;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     display: flex;
     justify-content: center;
     align-items: center;
