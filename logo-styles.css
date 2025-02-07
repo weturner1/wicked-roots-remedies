@@ -1,50 +1,70 @@
-/* Header styling */
-.site-header {
-    background-color: #f0f0f0; /* Match this to your calculator panes' background color */
+/* Header Container */
+.brand-header {
+    width: 100%;
+    height: 120px; /* Reduced header height */
+    background-color: rgba(245, 239, 224, 0.95); /* Matches calculator panel color */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 10px 0; /* Adjusts the header height */
+    align-items: center;
     position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo container */
-.logo-container {
+/* Logo Container */
+.brand-logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px; /* Space between logo and navigation */
 }
 
-/* Logo image */
-.brand-logo {
-    width: 120px; /* Set a specific width */
-    height: auto;
-}
-
-/* Navigation styling */
-.navigation {
-    position: absolute;
-    bottom: 5px; /* Adjust distance from bottom */
-    width: 100%;
-}
-
-.navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Logo Box */
+.brand-logo-box {
+    padding: 5px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
-    gap: 15px; /* Space between navigation items */
+    align-items: center;
+    border: 2px solid #2c2c2c; /* Thin metallic black border */
+    box-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.5),
+        -2px -2px 5px rgba(255, 255, 255, 0.2); /* Light dimensional effect */
 }
 
-.navigation a {
+/* Logo */
+.brand-logo {
+    width: 200px; /* Adjusted to keep the size consistent */
+    height: auto;
+    display: block;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-menu a {
     text-decoration: none;
-    color: #333;
+    font-size: 14px;
     font-weight: bold;
+    color: #2c2c2c;
+    transition: color 0.3s ease-in-out;
 }
 
-.navigation a:hover {
-    color: #007BFF; /* Change to your desired hover color */
+.nav-menu a:hover {
+    color: #822727; /* Metallic red on hover */
 }
