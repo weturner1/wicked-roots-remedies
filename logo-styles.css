@@ -1,43 +1,22 @@
-/* Full-width header */
+/* Header styling */
 .site-header {
-    width: 100%;
-    background-color: #f8f8f8; /* Light background color for the header */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for dimensionality */
-    padding: 20px 0; /* Vertical padding for spacing */
+    background-color: #f0f0f0; /* Match this to your calculator panes' background color */
+    padding: 10px 0; /* Adjusts the header height */
+    text-align: center;
 }
 
-/* Centering content within the header */
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Logo container */
+.brand-logo-container {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #333; /* Metallic black border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for dimensionality */
 }
 
-/* Logo styling */
+/* Logo image */
 .brand-logo {
-    height: 60px; /* Adjust height as needed */
-    margin-bottom: 10px; /* Space between logo and navigation */
-}
-
-/* Navigation styling */
-.header-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.header-nav li {
-    margin: 0 15px; /* Horizontal spacing between links */
-}
-
-.header-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.header-nav a:hover {
-    color: #007BFF; /* Accent color on hover */
+    width: 100%;
+    height: auto;
+    display: block;
 }
