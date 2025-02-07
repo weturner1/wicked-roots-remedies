@@ -3,21 +3,29 @@
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
-    background: url('https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/refs/heads/main/parchment.webp'); /* Plain aged parchment */
+    background: url('https://raw.githubusercontent.com/weturner1/wicked-roots-remedies/main/parchment.webp') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
     color: #1e1e1e;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* Dark Mode */
 .dark-mode {
-    background: #1e1e1e url('https://www.transparenttextures.com/patterns/dark-mosaic.png'); /* Subtle dark texture */
+    background: url('YOUR_GITHUB_IMAGE_URL') no-repeat center center fixed;
+    background-size: cover;
     color: #f8f8f8;
 }
 
+/* Logo Styling */
+.brand-logo {
+    width: 250px; /* Adjust to prevent skewing */
+    height: auto;
+    display: block;
+    margin: 40px auto 20px auto; /* Centers the logo with spacing */
+}
+
 /* Panel Styling */
-.container, .ratio-container {
+.container {
     background: rgba(245, 239, 224, 0.95); /* Warmer cream tone */
     padding: 20px;
     border-radius: 8px;
@@ -25,37 +33,23 @@ body {
     max-width: 450px;
     margin: auto;
     margin-bottom: 30px;
-    color: #3e2723; /* Dark brown text for readability */
-    border: 2px solid #5a1e1e; /* Dark maroon border */
+    color: #3e2723;
+    border: 2px solid #5a1e1e;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align content */
+    align-items: center;
 }
 
-/* Dark Mode Panel Updates */
-.dark-mode .container, .dark-mode .ratio-container {
-    background: rgba(80, 80, 80, 0.9); /* Lighter shade of grey */
+/* Dark Mode Panel Styling */
+.dark-mode .container {
+    background: rgba(60, 60, 60, 0.9); /* Lighter grey for better readability */
     color: #f8f8f8;
     border-color: gold;
 }
 
-/* Titles */
-h2 {
-    color: #5a1e1e; /* Dark maroon */
-}
-
-.dark-mode h2 {
-    color: gold;
-}
-
-/* Specific Fix for Ratios Title */
-.dark-mode .ratio-container h2 {
-    color: gold; /* Matches calculator title color */
-}
-
 /* Buttons */
 button {
-    background-color: #5a1e1e; /* Deep maroon */
+    background-color: #5a1e1e;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -69,10 +63,10 @@ button {
 }
 
 button:hover {
-    background-color: #822727; /* Lighter maroon on hover */
+    background-color: #822727;
 }
 
-/* Dark Mode Buttons */
+/* Dark Mode Button Updates */
 .dark-mode button {
     background-color: gold;
     color: black;
@@ -80,16 +74,17 @@ button:hover {
 
 /* Footer Styling */
 .footer {
-    background-color: #5a1e1e; /* Dark maroon */
+    background-color: #5a1e1e;
     color: white;
     padding: 10px;
     text-align: center;
     font-size: 0.9rem;
     position: relative;
-    bottom: -20px; /* Move up to fit better on parchment */
+    bottom: -20px;
     width: 100%;
 }
 
+/* Dark Mode Footer */
 .dark-mode .footer {
     background-color: gold;
     color: black;
@@ -102,7 +97,7 @@ button:hover {
 }
 
 .styled-table th, .styled-table td {
-    border: 1px solid #5a1e1e; /* Dark maroon for contrast */
+    border: 1px solid #5a1e1e;
     padding: 10px;
     text-align: center;
 }
@@ -113,7 +108,7 @@ button:hover {
 }
 
 .dark-mode .styled-table th {
-    background-color: #555;
+    background-color: #444;
     color: white;
 }
 
