@@ -5,17 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wicked Roots & Remedies</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="theme.js" defer></script>
     <script src="calculator.js" defer></script>
 </head>
 <body>
 
     <div id="header"></div>
-
-    <!-- Fix: Dark Mode Toggle Button Width Adjustment -->
-    <button class="toggle-dark-mode" style="width: 200px; margin: 10px auto;">
-        Toggle Dark Mode
-    </button>
 
     <div id="tips"></div>
     <div id="calculator1"></div>
@@ -23,8 +17,9 @@
     <div id="calculator3"></div>
     <div id="ratios"></div>
 
-    <!-- Load Footer Dynamically -->
-    <div id="footer"></div>
+    <div id="footer">
+        Contact us at <a href="mailto:wickedrootsandremedies@gmail.com">wickedrootsandremedies@gmail.com</a>
+    </div>
 
     <script>
         function loadComponent(id, file) {
