@@ -10,69 +10,49 @@ body {
 /* Calculator Styling */
 .container, .ratio-container {
     background: linear-gradient(to bottom, #F7F4F1, #EDEAE5); /* Soft parchment gradient */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    max-width: 500px;
+    padding: 15px; /* Reduced padding for compact look */
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 450px; /* Reduced width for less blank space */
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #3e2723;
-    border: 2px solid #2C2C2B; /* Metallic black border */
+    border: 1.5px solid #2C2C2B; /* Metallic black border */
     position: relative;
+    background-image: url('texture.png'); /* Adding texture */
+    background-size: cover;
 }
 
-/* Enhanced Vine Engraving Effect */
-.container::before, .ratio-container::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background: url('vine-pattern.png') no-repeat;
-    background-size: contain;
-    top: -15px;
-    left: -15px;
-    opacity: 0.6;
-    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.5));
-}
-
-/* Buttons with Strong Metallic Effect */
+/* Buttons */
 button {
-    background: linear-gradient(to bottom, #574839, #3A2C20); /* Deep metallic bronze */
-    color: white;
-    padding: 12px 18px;
+    background: linear-gradient(to bottom, #8B6F4E, #7A5E3A); /* Metallic bronze gradient */
+    color: #C0C0C0; /* Metallic silver font */
+    padding: 10px 16px; /* Adjusted button size */
     border: 2px solid #2C2C2B; /* Metallic black outline */
     cursor: pointer;
     font-size: 1rem;
     border-radius: 6px;
     margin-top: 10px;
-    width: 220px;
+    width: 200px;
     text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
     transition: all 0.3s ease-in-out;
-    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.3), 
-                inset 2px 2px 6px rgba(0, 0, 0, 0.6), 
-                0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Stronger Hover Effect */
+/* Button hover shimmer effect */
 button:hover {
-    background: linear-gradient(to bottom, #715D4A, #4F3D2F);
-    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 0.4),
-                inset 2px 2px 8px rgba(0, 0, 0, 0.7), 
-                0px 6px 12px rgba(0, 0, 0, 0.5);
-    transform: scale(1.05);
+    background: linear-gradient(to right, #A57A5A, #8B6F4E, #A57A5A);
+    box-shadow: 0 0 8px rgba(165, 122, 90, 0.6);
 }
 
 /* Tip Box */
 .tip-box {
     background: rgba(247, 244, 241, 0.95);
-    padding: 14px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    margin: 30px auto 40px auto;
-    border: 2px solid #2C2C2B; /* Metallic black border */
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 450px;
+    margin: 25px auto 35px auto;
+    border: 1.5px solid #2C2C2B; /* Metallic black border */
     position: relative;
 }
 
@@ -80,35 +60,7 @@ button:hover {
 .styled-table {
     width: 100%;
     border-collapse: collapse;
-    background: #FAFAFA;
-}
-
-/* Improved Calculator Input Alignment */
-.input-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    margin-bottom: 12px;
-}
-
-.input-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 1rem;
-    color: #3e2723;
-}
-
-/* Input Fields */
-input, select {
-    width: 85%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #2C2C2B; /* Metallic black */
-    border-radius: 6px;
-    background: #FFFFFF;
-    color: #3e2723;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: #FAFAFA; /* Matches input fields */
 }
 
 /* Calculator Output Text */
@@ -118,16 +70,30 @@ input, select {
     color: #2C2C2B; /* Metallic black */
 }
 
-/* Footer Styling */
-.footer {
-    background: linear-gradient(to right, #282828, #1E1E1E);
-    color: white;
-    padding: 12px;
+/* Form Input Fields */
+input, select {
+    width: 90%;
+    padding: 8px; /* Adjusted to fit new calculator size */
+    margin: 4px 0;
+    border: 1px solid #282828; /* Metallic black */
+    border-radius: 4px;
+    background: #FFFFFF; /* Matches table background */
+    color: #3e2723;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Email Styling */
+/* Footer Styling */
+.footer {
+    background: linear-gradient(to right, #282828, #1E1E1E); /* Metallic black */
+    color: white;
+    padding: 12px;
+    border-top: 2px solid #8B6F4E; /* Metallic bronze */
+    border-bottom: 2px solid #8B6F4E; /* Metallic bronze */
+}
+
+/* Make email hyperlink metallic silver */
 .footer a {
-    color: #C0C0C0;
+    color: #C0C0C0; /* Metallic silver */
     text-decoration: underline;
     transition: color 0.3s ease-in-out;
 }
