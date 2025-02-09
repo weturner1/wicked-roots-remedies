@@ -7,32 +7,47 @@ body {
     color: #2B2B2B;
 }
 
-/* Calculator Styling */
+/* Container Styling */
 .container, .ratio-container {
     background: linear-gradient(to bottom, #F7F4F1, #EDEAE5); /* Soft parchment gradient */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     max-width: 500px;
     margin: auto;
     margin-bottom: 30px;
     color: #3e2723;
     border: 1.5px solid #2C2C2B; /* Metallic black border */
-    position: relative;
+    position: relative; /* For pseudo-element positioning */
+    text-align: left; /* Align text properly */
+}
+
+/* Input Field Alignment Fix */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+/* Labels Styling */
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 /* Enhanced vine engraving effect */
 .container::before, .ratio-container::before {
     content: "";
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background: url('vine-pattern.png') no-repeat;
     background-size: contain;
-    top: -10px;
-    left: -10px;
-    opacity: 0.4;
-    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.4));
+    top: -25px;
+    left: -15px;
+    opacity: 0.8; /* Increased opacity for better visibility */
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.5)); /* Enhanced depth */
 }
 
 /* Buttons */
@@ -50,22 +65,10 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-/* Shimmer effect changed to metallic bronze */
+/* Button Hover Effect */
 button:hover {
     background: linear-gradient(to right, #A57A5A, #8B6F4E, #A57A5A);
-    box-shadow: 0 0 6px rgba(165, 122, 90, 0.5);
-}
-
-/* Tip Box */
-.tip-box {
-    background: rgba(247, 244, 241, 0.95);
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-    max-width: 500px;
-    margin: 30px auto 40px auto;
-    border: 1.5px solid #2C2C2B; /* Metallic black border */
-    position: relative;
+    box-shadow: 0 0 8px rgba(165, 122, 90, 0.6);
 }
 
 /* Footer Styling */
@@ -73,13 +76,12 @@ button:hover {
     background: linear-gradient(to right, #282828, #1E1E1E); /* Metallic black */
     color: white;
     padding: 12px;
-    border-top: 2px solid #8B6F4E; /* Metallic bronze top border */
-    border-bottom: 2px solid #8B6F4E; /* Metallic bronze bottom border */
+    border-top: 3px solid #8B6F4E; /* Metallic bronze border */
 }
 
-/* Make email hyperlink metallic silver */
+/* Footer Email Styling */
 .footer a {
-    color: #C0C0C0;
+    color: #D8D8D8; /* Metallic Silver */
     text-decoration: underline;
     transition: color 0.3s ease-in-out;
 }
