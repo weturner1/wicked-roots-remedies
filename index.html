@@ -5,27 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wicked Roots & Remedies</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="logo-styles.css">
-    <script src="calculator.js" defer></script>
+    <link rel="stylesheet" href="custom-header.css">
 </head>
 <body>
 
-    <!-- Header with logo -->
-    <div id="header"></div>
+    <!-- Header Section -->
+    <header id="header"></header>
 
-    <!-- Tips Section -->
+    <!-- Main Content -->
     <div id="tips"></div>
-
-    <!-- Calculators -->
     <div id="calculator1"></div>
     <div id="calculator2"></div>
     <div id="calculator3"></div>
-
-    <!-- Ratios Section -->
     <div id="ratios"></div>
 
-    <!-- Footer -->
-    <div id="footer"></div>
+    <!-- Footer Section -->
+    <footer id="footer"></footer>
 
     <script>
         function loadComponent(id, file) {
@@ -34,7 +29,7 @@
                 .then(html => document.getElementById(id).innerHTML = html);
         }
 
-        // Load all page sections dynamically
+        // Dynamically Load Sections
         loadComponent("header", "header.html");
         loadComponent("tips", "tips.html");
         loadComponent("calculator1", "calculator1.html");
