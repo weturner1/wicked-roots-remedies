@@ -8,7 +8,7 @@
     border-top: 3px solid #8C7853; /* Metallic Bronze */
     border-bottom: 3px solid #8C7853; /* Metallic Bronze */
     position: relative;
-    height: 110px; /* Adjusted for better proportion */
+    height: 130px; /* Increased slightly to accommodate larger logo */
 }
 
 /* Logo Styling */
@@ -20,7 +20,7 @@
 }
 
 .brand-logo {
-    max-height: 110px; /* Adjusted to match the header size */
+    max-height: 150px; /* Increased 35% from 110px */
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6)); /* Adds dimensionality */
     transition: transform 0.3s ease-in-out;
 }
