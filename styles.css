@@ -7,40 +7,9 @@ body {
     color: #2B2B2B;
 }
 
-/* Header Styling */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #c0c0c0, #826f5d, #1a1a1a); /* Metallic Silver to Tan-Grey to Black */
-    border-top: 3px solid #8B0000; /* Metallic Red Line */
-    border-bottom: 3px solid #1a1a1a; /* Metallic Black */
-}
-
-/* Logo Styling */
-.brand-logo {
-    max-height: 110px;
-    margin: 0 auto;
-}
-
-/* Navigation Links */
-.nav-links {
-    flex: 1;
-    text-align: right;
-}
-
-.nav-links a {
-    font-family: 'Cinzel Decorative', serif;
-    color: #D8D8D8;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 15px;
-}
-
-.nav-links a:hover {
-    color: #8B0000; /* Metallic Red on Hover */
-}
+/* Navigation Links - REMOVED (now in custom-header.css) */
+/* Header Styling - REMOVED (now in custom-header.css) */
+/* Logo Styling - REMOVED (now in custom-header.css) */
 
 /* Calculator Styling */
 .container, .ratio-container {
@@ -65,8 +34,8 @@ body {
     background-size: contain;
     top: -15px;
     left: -15px;
-    opacity: 0.5; /* Increased opacity for visibility */
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Simulated engraving effect */
+    opacity: 0.5;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
 /* Buttons */
@@ -100,16 +69,6 @@ button:hover {
     margin: 30px auto 40px auto;
     border: 2px solid #5a1e1e;
     position: relative;
-}
-
-/* Glowing effect for tip icon */
-.tip-box::before {
-    content: "🌿";
-    position: absolute;
-    left: 15px;
-    font-size: 1.4rem;
-    color: #008000;
-    text-shadow: 0 0 6px rgba(0, 255, 0, 0.7);
 }
 
 /* Table Styling */
