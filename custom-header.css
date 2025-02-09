@@ -4,43 +4,31 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 30px;
-    background: #1A1A1A; /* Metallic Black */
-    border-top: 2px solid transparent; /* Placeholder for metallic effect */
-    border-bottom: 2px solid transparent; /* Placeholder for metallic effect */
+    background: #1a1a1a; /* Metallic Black */
+    border-top: 2px solid #8B6F4E; /* Metallic Bronze */
+    border-bottom: 2px solid #8B6F4E; /* Metallic Bronze */
     position: relative;
-    height: 120px;
-    width: 100%;
+    height: 100px; /* Reduced height for a tighter fit */
 }
 
-/* Logo Container (UNCHANGED) */
+/* Logo Styling */
 .logo-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: calc(50% - 40px);
-    transform: translateX(-50%);
+    justify-content: center; /* Ensures logo stays centered */
+    flex: 1;
 }
 
-/* Logo Styling (UNCHANGED) */
 .brand-logo {
-    max-height: 135px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-height: 130px; /* Increased size by 35% */
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6)); /* Adds depth */
 }
 
-.brand-logo:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(140, 98, 57, 0.7);
-}
-
-/* Navigation Links (UNCHANGED) */
+/* Navigation Links */
 .nav-links {
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 100px; /* Properly positioned */
-    gap: 30px;
+    text-align: right;
 }
 
 .nav-links a {
@@ -48,28 +36,27 @@
     color: #C0C0C0; /* Metallic Silver */
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease-in-out;
+    margin: 0 15px;
+    transition: all 0.3s ease-in-out;
 }
 
+/* Nav Links Hover Effect - Adds a metallic shimmer */
 .nav-links a:hover {
-    color: #8C6239; /* Metallic Bronze on Hover */
+    color: #E0E0E0; /* Brighter silver */
+    text-shadow: 0px 0px 8px rgba(192, 192, 192, 0.6);
+    text-decoration: underline;
 }
 
-/* Header Top & Bottom Lines - Thinner with Metallic Gleam */
+/* Header Top & Bottom Borders with Metallic Gleam */
 .header::before,
 .header::after {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
-    height: 1.5px; /* Reduced thickness */
-    background: linear-gradient(
-        to right, 
-        rgba(140, 98, 57, 0.1), /* Metallic Bronze (faint) */
-        rgba(192, 192, 192, 0.7), /* Metallic Silver Gleam */
-        rgba(140, 98, 57, 0.1) /* Metallic Bronze (faint) */
-    );
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2); /* Adds subtle gleam effect */
+    height: 2px;
+    background: linear-gradient(to right, rgba(139, 111, 78, 0.8), rgba(200, 175, 145, 1), rgba(139, 111, 78, 0.8));
+    box-shadow: 0px 0px 6px rgba(139, 111, 78, 0.9); /* Adds glimmer effect */
 }
 
 .header::before {
