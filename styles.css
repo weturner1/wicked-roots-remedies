@@ -18,6 +18,7 @@ body {
     margin-bottom: 30px;
     color: #3e2723;
     border: 2px solid #282828; /* Metallic black border */
+    position: relative; /* Added to contain the ::before pseudo-element */
 }
 
 /* Enhanced vine engraving effect */
@@ -84,7 +85,7 @@ button:hover {
 .result {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #C00000; /* Metallic red */
+    color: #2C2C2B; /* Metallic black */
 }
 
 /* Form Input Fields */
