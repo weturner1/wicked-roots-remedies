@@ -2,13 +2,13 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center everything */
+    justify-content: center;
     padding: 15px 30px;
     background: #1A1A1A; /* Metallic Black */
-    border-top: 3px solid #8C7853; /* Metallic Bronze */
-    border-bottom: 3px solid #8C7853; /* Metallic Bronze */
+    border-top: 3px solid #8C6239; /* Metallic Bronze */
+    border-bottom: 3px solid #8C6239; /* Metallic Bronze */
     position: relative;
-    height: 130px; /* Increased slightly to accommodate larger logo */
+    height: 120px;
 }
 
 /* Logo Styling */
@@ -16,28 +16,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .brand-logo {
-    max-height: 150px; /* Increased 35% from 110px */
-    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6)); /* Adds dimensionality */
-    transition: transform 0.3s ease-in-out;
+    max-height: 135px; /* Increased size by 35% */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+/* Hover effect for logo */
 .brand-logo:hover {
-    transform: scale(1.05); /* Slight hover effect */
+    transform: scale(1.05); /* Slight pop-out effect */
+    box-shadow: 0px 0px 15px rgba(140, 98, 57, 0.7); /* Soft bronze glow */
 }
 
 /* Navigation Links */
 .nav-links {
-    position: absolute;
-    right: 30px;
+    flex: 1;
+    text-align: right;
 }
 
 .nav-links a {
     font-family: 'Cinzel Decorative', serif;
-    color: #D8D8D8; /* Metallic Silver */
+    color: #D8C3A5; /* Updated to match the logo's color */
     text-decoration: none;
     font-size: 18px;
     margin: 0 15px;
@@ -45,5 +45,26 @@
 }
 
 .nav-links a:hover {
-    color: #8C7853; /* Metallic Bronze on Hover */
+    color: #8C6239; /* Metallic Bronze on Hover */
+}
+
+/* Header Borders */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #8C6239; /* Metallic Bronze */
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #8C6239; /* Metallic Bronze */
 }
