@@ -1,11 +1,18 @@
 <div class="container">
     <h2>Alcohol Proof and Ounce Calculator</h2>
-    <input type="number" id="alcoholOz" placeholder="Alcohol Volume (oz)">
+    <label for="alcoholOz">Alcohol Volume (oz):</label>
+    <input type="number" id="alcoholOz" placeholder="Enter alcohol volume">
+    
+    <label for="alcoholProof">Alcohol Proof:</label>
+    <input type="number" id="alcoholProof" placeholder="Enter alcohol proof">
+    
+    <label for="fold">Select Vanilla Fold:</label>
     <select id="fold">
         <option value="1">Single Fold</option>
         <option value="2">Double Fold</option>
         <option value="3">Triple Fold</option>
     </select>
+    
     <button onclick="calculateVanillaBeans()">Calculate</button>
     <p class="result" id="result"></p>
 </div>
