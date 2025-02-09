@@ -12,14 +12,14 @@
     width: 100%;
 }
 
-/* Logo Container - DO NOT MOVE */
+/* Logo Container - Moved 40px Left */
 .logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* This keeps the logo where you had it */
+    left: calc(50% - 40px); /* Shifted 40px left */
+    transform: translateX(-50%);
 }
 
 /* Logo Styling */
@@ -33,13 +33,13 @@
     box-shadow: 0px 0px 15px rgba(140, 98, 57, 0.7);
 }
 
-/* Navigation Links - Moved 40px Left */
+/* Navigation Links - Metallic Silver & Properly Positioned */
 .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 100px; /* Previously 140px, now moved 40px left */
+    right: 100px; /* Previously 140px, moved 40px left */
     gap: 30px;
 }
 
