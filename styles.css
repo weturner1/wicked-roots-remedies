@@ -7,7 +7,7 @@ body {
     color: #2B2B2B;
 }
 
-/* Calculator Styling */
+/* Calculator and Ratio Container Styling */
 .container, .ratio-container {
     background: linear-gradient(to bottom, #F7F4F1, #EDEAE5); /* Soft parchment gradient */
     padding: 20px;
@@ -17,8 +17,8 @@ body {
     margin: auto;
     margin-bottom: 30px;
     color: #3e2723;
-    border: 2px solid #282828; /* Metallic black border */
-    position: relative; /* Added to contain the ::before pseudo-element */
+    border: 4px solid #2C2C2B; /* Metallic black border */
+    position: relative;
 }
 
 /* Enhanced vine engraving effect */
@@ -40,7 +40,7 @@ button {
     background: linear-gradient(to bottom, #8B6F4E, #7A5E3A); /* Metallic bronze gradient */
     color: white;
     padding: 12px 18px;
-    border: 2px solid #8B6F4E; /* Metallic bronze outline */
+    border: 2px solid #2C2C2B; /* Metallic black outline */
     cursor: pointer;
     font-size: 1rem;
     border-radius: 6px;
@@ -64,7 +64,7 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     margin: 30px auto 40px auto;
-    border: 2px solid #5a1e1e;
+    border: 4px solid #2C2C2B; /* Metallic black border */
     position: relative;
 }
 
