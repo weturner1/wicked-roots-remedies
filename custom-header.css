@@ -11,20 +11,21 @@
     height: 100px; /* Reduced height for a tighter fit */
 }
 
-/* Logo Styling */
+/* Logo Styling - RESTORED TO ORIGINAL PLACEMENT */
 .logo-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Ensures logo stays centered */
+    justify-content: flex-start; /* Keeps logo in its correct position */
     flex: 1;
 }
 
 .brand-logo {
     max-height: 130px; /* Increased size by 35% */
+    margin-left: 40px; /* Ensures correct placement */
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6)); /* Adds depth */
 }
 
-/* Navigation Links */
+/* Navigation Links - Metallic Silver */
 .nav-links {
     display: flex;
     align-items: center;
