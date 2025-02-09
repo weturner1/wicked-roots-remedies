@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 30px;
-    background: linear-gradient(to right, #C0C0C0, #8B7765, #1A1A1A); /* Metallic Silver → Tan-Grey → Black */
+    background: linear-gradient(to right, #665D1E, #8D775F, #3E2C1A); /* Metallic Antique Bronze */
     border-top: 3px solid #8B0000; /* Metallic Red Line */
     border-bottom: 3px solid #1A1A1A; /* Metallic Black */
     position: relative;
