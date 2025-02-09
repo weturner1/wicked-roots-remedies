@@ -2,7 +2,7 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers the logo */
+    justify-content: center; /* Ensures the logo is centered */
     padding: 15px 30px;
     background: #1A1A1A; /* Metallic Black */
     border-top: 3px solid #8C6239; /* Metallic Bronze */
@@ -12,15 +12,15 @@
     width: 100%;
 }
 
-/* Logo Container - Centered */
+/* Logo Container - Fully Centered */
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    width: 100%; /* Ensures it stays aligned to the page width */
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Forces the logo to be centered */
+    transform: translateX(-50%); /* Centers exactly with page elements */
 }
 
 /* Logo Styling */
@@ -38,13 +38,14 @@
 /* Navigation Links */
 .nav-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center; /* Centers navigation */
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     position: absolute;
-    right: 30px;
+    right: 50px; /* Adjusted so it doesn’t push too far right */
 }
 
+/* Navigation Link Styling */
 .nav-links a {
     font-family: 'Cinzel Decorative', serif;
     color: #C0C0C0; /* Metallic Silver */
