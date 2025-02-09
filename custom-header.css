@@ -2,7 +2,7 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Centers everything inside the header */
     padding: 15px 30px;
     background: #3D2B1F; /* Darker aged bronze */
     border-top: 3px solid #8B0000; /* Metallic Red Line */
@@ -14,15 +14,13 @@
 /* Logo Styling */
 .logo-container {
     display: flex;
-    align-items: center;
-    flex: 1.5; /* Allows the logo to take up more space */
-    justify-content: left; /* Ensures it stays towards the left-center */
+    justify-content: center; /* Centers the logo */
+    flex-grow: 1; /* Allows the logo to take up more space */
 }
 
 .brand-logo {
-    max-height: 150px; /* Increased size */
+    max-height: 150px; /* Ensures visibility */
     width: auto;
-    margin-left: 20px; /* Adjusted for better centering */
 }
 
 /* Navigation Links */
