@@ -1,3 +1,4 @@
+
 function calculateVanillaBeans() {
     let alcoholOz = parseFloat(document.getElementById("alcoholOz").value);
     let fold = parseFloat(document.getElementById("fold").value);
@@ -27,9 +28,10 @@ function calculateDilution() {
 
 function calculateAlcoholNeeded() {
     let beanWeight = parseFloat(document.getElementById("beanWeight").value);
+    let alcoholProof = parseFloat(document.getElementById("alcoholProofForBeans").value);
     let resultElement = document.getElementById("alcoholNeededResult");
 
-    if (!isNaN(beanWeight)) {
+    if (!isNaN(beanWeight) && !isNaN(alcoholProof)) {
         let alcoholNeeded = beanWeight * 8;
         resultElement.innerText = `You need ${alcoholNeeded.toFixed(2)} oz of alcohol.`;
     } else {
