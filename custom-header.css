@@ -4,22 +4,25 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 30px;
-    background: #2E241B; /* Deep Aged Bronze */
+    background: #3D2B1F; /* Darker aged bronze */
     border-top: 3px solid #8B0000; /* Metallic Red Line */
     border-bottom: 3px solid #1A1A1A; /* Metallic Black */
     position: relative;
-    height: 110px; /* Adjusted for better proportion */
+    height: 120px; /* Adjusted for better proportion */
 }
 
 /* Logo Styling */
 .logo-container {
     display: flex;
     align-items: center;
+    flex: 1.5; /* Allows the logo to take up more space */
+    justify-content: left; /* Ensures it stays towards the left-center */
 }
 
 .brand-logo {
-    max-height: 100px; /* Adjusted to match the header size */
-    margin-left: 30px;
+    max-height: 150px; /* Increased size */
+    width: auto;
+    margin-left: 20px; /* Adjusted for better centering */
 }
 
 /* Navigation Links */
@@ -49,7 +52,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background: #1A1A1A; /* Metallic Black Line */
+    background: linear-gradient(to right, #1A1A1A, #5A5A5A, #1A1A1A); /* Metallic Black Line */
 }
 
 .header::after {
@@ -59,5 +62,5 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background: #8B0000; /* Metallic Red Line */
+    background: linear-gradient(to right, #8B0000, #C00000, #8B0000); /* Metallic Red Line */
 }
