@@ -2,7 +2,7 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Ensures centering */
+    justify-content: center;
     padding: 15px 30px;
     background: #1A1A1A; /* Metallic Black */
     border-top: 3px solid #8C6239; /* Metallic Bronze */
@@ -12,37 +12,36 @@
     width: 100%;
 }
 
-/* Logo Container - Centered and Adjusted Left */
+/* Logo Container */
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     position: absolute;
-    left: calc(50% - 40px); /* Shifted left by 40px */
-    transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%); /* Centered perfectly */
 }
 
 /* Logo Styling */
 .brand-logo {
-    max-height: 135px; /* Increased size by 35% */
+    max-height: 135px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Hover effect for logo */
 .brand-logo:hover {
-    transform: scale(1.05); /* Slight pop-out effect */
-    box-shadow: 0px 0px 15px rgba(140, 98, 57, 0.7); /* Soft bronze glow */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(140, 98, 57, 0.7);
 }
 
-/* Navigation Links - Adjusted Left */
+/* Navigation Links - Adjusted Placement */
 .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
     position: absolute;
-    right: calc(50px - 40px); /* Shifted left by 40px */
+    right: 60px; /* Adjusted placement */
+    gap: 30px;
 }
 
 /* Navigation Link Styling */
@@ -59,22 +58,20 @@
 }
 
 /* Header Borders */
-.header::before {
+.header::before,
+.header::after {
     content: "";
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
     height: 3px;
     background: #8C6239; /* Metallic Bronze */
 }
 
+.header::before {
+    top: 0;
+}
+
 .header::after {
-    content: "";
-    position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: #8C6239; /* Metallic Bronze */
 }
