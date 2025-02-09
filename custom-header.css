@@ -4,9 +4,9 @@
     align-items: center;
     justify-content: center; /* Center everything */
     padding: 15px 30px;
-    background: #5A4632; /* Darker aged bronze */
+    background: #1A1A1A; /* Metallic Black */
     border-top: 3px solid #8B0000; /* Metallic Red Line */
-    border-bottom: 3px solid #1A1A1A; /* Metallic Black */
+    border-bottom: 3px solid #5A5A5A; /* Dark Gray Line for Contrast */
     position: relative;
     height: 110px; /* Adjusted for better proportion */
 }
@@ -26,21 +26,21 @@
 .brand-logo {
     max-height: 150px;
     width: auto;
-    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6)); /* Soft glow for dimensionality */
+    filter: drop-shadow(5px 5px 15px rgba(255, 255, 255, 0.3)); /* Soft glow for contrast */
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 /* Hover Effect - Slight Lift */
 .brand-logo:hover {
     transform: translateX(-50%) scale(1.05); /* Slight size increase */
-    filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.8)); /* More prominent shadow */
+    filter: drop-shadow(8px 8px 20px rgba(255, 255, 255, 0.5)); /* Brighter shadow */
     cursor: pointer;
 }
 
 /* Click Effect - Press Down */
 .brand-logo:active {
     transform: translateX(-50%) scale(0.95); /* Shrinks slightly */
-    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5)); /* Softer shadow */
+    filter: drop-shadow(3px 3px 10px rgba(255, 255, 255, 0.2)); /* Softer shadow */
 }
 
 /* Navigation Links */
@@ -72,7 +72,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, #1A1A1A, #5A5A5A, #1A1A1A); /* Metallic Black Line */
+    background: linear-gradient(to right, #5A5A5A, #C0C0C0, #5A5A5A); /* Metallic Silver Line */
 }
 
 .header::after {
