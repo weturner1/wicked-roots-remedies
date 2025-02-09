@@ -2,7 +2,7 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers everything inside the header */
+    justify-content: center; /* Centers content horizontally */
     padding: 15px 30px;
     background: #3D2B1F; /* Darker aged bronze */
     border-top: 3px solid #8B0000; /* Metallic Red Line */
@@ -11,22 +11,27 @@
     height: 120px; /* Adjusted for better proportion */
 }
 
-/* Logo Styling */
+/* Logo Container - Centering */
 .logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Perfect center alignment */
     display: flex;
-    justify-content: center; /* Centers the logo */
-    flex-grow: 1; /* Allows the logo to take up more space */
-}
-
-.brand-logo {
-    max-height: 150px; /* Ensures visibility */
+    justify-content: center;
+    align-items: center;
     width: auto;
 }
 
-/* Navigation Links */
+/* Logo Image */
+.brand-logo {
+    max-height: 150px; /* Adjust if needed */
+    width: auto;
+}
+
+/* Navigation Links - Keep Right */
 .nav-links {
-    flex: 1;
-    text-align: right;
+    position: absolute;
+    right: 30px; /* Aligns navigation to the right */
 }
 
 .nav-links a {
