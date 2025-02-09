@@ -7,38 +7,50 @@ body {
     color: #2B2B2B;
 }
 
-/* Calculator Styling */
+/* Calculator & Ratio Panel Styling */
 .container, .ratio-container {
     background: linear-gradient(to bottom, #F7F4F1, #EDEAE5); /* Soft parchment gradient */
-    padding: 15px; /* Reduced padding for compact look */
-    border-radius: 6px;
+    padding: 20px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    max-width: 450px; /* Reduced width for less blank space */
+    max-width: 500px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #3e2723;
     border: 1.5px solid #2C2C2B; /* Metallic black border */
     position: relative;
-    background-image: url('texture.png'); /* Adding texture */
-    background-size: cover;
+}
+
+/* Enhanced vine engraving effect */
+.container::before, .ratio-container::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url('vine-pattern.png') no-repeat;
+    background-size: contain;
+    top: -15px;
+    left: -15px;
+    opacity: 0.5;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
 /* Buttons */
 button {
     background: linear-gradient(to bottom, #8B6F4E, #7A5E3A); /* Metallic bronze gradient */
-    color: #C0C0C0; /* Metallic silver font */
-    padding: 10px 16px; /* Adjusted button size */
+    color: white;
+    padding: 12px 18px;
     border: 2px solid #2C2C2B; /* Metallic black outline */
     cursor: pointer;
     font-size: 1rem;
     border-radius: 6px;
     margin-top: 10px;
-    width: 200px;
+    width: 220px;
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
 
-/* Button hover shimmer effect */
+/* Shimmer effect changed to metallic bronze */
 button:hover {
     background: linear-gradient(to right, #A57A5A, #8B6F4E, #A57A5A);
     box-shadow: 0 0 8px rgba(165, 122, 90, 0.6);
@@ -47,11 +59,11 @@ button:hover {
 /* Tip Box */
 .tip-box {
     background: rgba(247, 244, 241, 0.95);
-    padding: 10px;
-    border-radius: 6px;
+    padding: 12px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    max-width: 450px;
-    margin: 25px auto 35px auto;
+    max-width: 500px;
+    margin: 30px auto 40px auto;
     border: 1.5px solid #2C2C2B; /* Metallic black border */
     position: relative;
 }
@@ -63,6 +75,12 @@ button:hover {
     background: #FAFAFA; /* Matches input fields */
 }
 
+/* Add soft shadow effect on hover */
+.styled-table tr:hover {
+    background: rgba(240, 240, 240, 0.8);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
 /* Calculator Output Text */
 .result {
     font-size: 1.2rem;
@@ -72,14 +90,14 @@ button:hover {
 
 /* Form Input Fields */
 input, select {
-    width: 90%;
-    padding: 8px; /* Adjusted to fit new calculator size */
-    margin: 4px 0;
-    border: 1px solid #282828; /* Metallic black */
-    border-radius: 4px;
+    width: 85%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #2C2C2B; /* Metallic black */
+    border-radius: 5px;
     background: #FFFFFF; /* Matches table background */
     color: #3e2723;
-    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styling */
@@ -87,13 +105,23 @@ input, select {
     background: linear-gradient(to right, #282828, #1E1E1E); /* Metallic black */
     color: white;
     padding: 12px;
-    border-top: 2px solid #8B6F4E; /* Metallic bronze */
-    border-bottom: 2px solid #8B6F4E; /* Metallic bronze */
+    position: relative;
+}
+
+/* Footer Border */
+.footer::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: linear-gradient(to right, #8B6F4E, #7A5E3A, #8B6F4E); /* Metallic bronze border */
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 /* Make email hyperlink metallic silver */
 .footer a {
-    color: #C0C0C0; /* Metallic silver */
+    color: #C0C0C0;
     text-decoration: underline;
     transition: color 0.3s ease-in-out;
 }
