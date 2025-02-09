@@ -1,8 +1,14 @@
 <div class="container">
     <h2>Alcohol Distillation Calculator</h2>
-    <input type="number" id="startProof" placeholder="Starting Proof">
-    <input type="number" id="startVolume" placeholder="Starting Volume (oz)">
-    <input type="number" id="targetProof" placeholder="Target Proof">
+    <label for="startProof">Starting Proof:</label>
+    <input type="number" id="startProof" placeholder="Enter starting proof">
+    
+    <label for="startVolume">Starting Volume (oz):</label>
+    <input type="number" id="startVolume" placeholder="Enter starting volume">
+    
+    <label for="targetProof">Target Proof:</label>
+    <input type="number" id="targetProof" placeholder="Enter target proof">
+    
     <button onclick="calculateDilution()">Calculate</button>
     <p class="result" id="dilutionResult"></p>
 </div>
