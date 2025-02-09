@@ -1,35 +1,63 @@
-/* NEW: Custom Header Class */
-.custom-header {
+/* Custom Header Styling */
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 100px;  /* Fixed height */
+    justify-content: space-between;
     padding: 15px 30px;
-    background: linear-gradient(to right, #C0C0C0, #8B7765, #1A1A1A);
-    border-top: 3px solid #8B0000;  /* Metallic Red */
-    border-bottom: 3px solid #1A1A1A;  /* Metallic Black */
+    background: linear-gradient(to right, #C0C0C0, #8B7765, #1A1A1A); /* Metallic Silver → Tan-Grey → Black */
+    border-top: 3px solid #8B0000; /* Metallic Red Line */
+    border-bottom: 3px solid #1A1A1A; /* Metallic Black */
+    position: relative;
+    height: 110px; /* Adjusted for better proportion */
 }
 
-/* NEW: Logo Styling (Inside Custom Header) */
-.custom-header .brand-logo {
-    max-height: 110px;
-    margin-left: 20px;
+/* Logo Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
-/* NEW: Navigation Links */
-.custom-header .nav-links {
+.brand-logo {
+    max-height: 100px; /* Adjusted to match the header size */
+    margin-left: 30px;
+}
+
+/* Navigation Links */
+.nav-links {
     flex: 1;
     text-align: right;
 }
 
-.custom-header .nav-links a {
+.nav-links a {
     font-family: 'Cinzel Decorative', serif;
     color: #D8D8D8; /* Metallic Silver */
     text-decoration: none;
     font-size: 18px;
     margin: 0 15px;
+    transition: color 0.3s ease-in-out;
 }
 
-.custom-header .nav-links a:hover {
-    color: #8B0000; /* Metallic Red */
+.nav-links a:hover {
+    color: #8B0000; /* Metallic Red on Hover */
+}
+
+/* Header Top & Bottom Borders */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #1A1A1A, #5A5A5A, #1A1A1A); /* Metallic Black Line */
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #8B0000, #C00000, #8B0000); /* Metallic Red Line */
 }
