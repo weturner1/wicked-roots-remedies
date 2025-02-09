@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .brand-logo {
@@ -31,16 +32,19 @@
 
 /* Navigation Links */
 .nav-links {
-    flex: 1;
-    text-align: right;
+    position: absolute;
+    bottom: 10px; /* Adjusted to keep it centered below the logo */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links a {
     font-family: 'Cinzel Decorative', serif;
-    color: #D8C3A5; /* Updated to match the logo's color */
+    color: #C0C0C0; /* Metallic Silver */
     text-decoration: none;
     font-size: 18px;
-    margin: 0 15px;
     transition: color 0.3s ease-in-out;
 }
 
