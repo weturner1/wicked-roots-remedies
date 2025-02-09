@@ -1,0 +1,35 @@
+/* NEW: Custom Header Class */
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;  /* Fixed height */
+    padding: 15px 30px;
+    background: linear-gradient(to right, #C0C0C0, #8B7765, #1A1A1A);
+    border-top: 3px solid #8B0000;  /* Metallic Red */
+    border-bottom: 3px solid #1A1A1A;  /* Metallic Black */
+}
+
+/* NEW: Logo Styling (Inside Custom Header) */
+.custom-header .brand-logo {
+    max-height: 110px;
+    margin-left: 20px;
+}
+
+/* NEW: Navigation Links */
+.custom-header .nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.custom-header .nav-links a {
+    font-family: 'Cinzel Decorative', serif;
+    color: #D8D8D8; /* Metallic Silver */
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.custom-header .nav-links a:hover {
+    color: #8B0000; /* Metallic Red */
+}
