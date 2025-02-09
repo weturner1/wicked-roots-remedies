@@ -2,36 +2,53 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers content horizontally */
+    justify-content: center; /* Center everything */
     padding: 15px 30px;
-    background: #3D2B1F; /* Darker aged bronze */
+    background: #5A4632; /* Darker aged bronze */
     border-top: 3px solid #8B0000; /* Metallic Red Line */
     border-bottom: 3px solid #1A1A1A; /* Metallic Black */
     position: relative;
-    height: 120px; /* Adjusted for better proportion */
+    height: 110px; /* Adjusted for better proportion */
 }
 
-/* Logo Container - Centering */
+/* Logo Container - Centered */
 .logo-container {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Perfect center alignment */
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
 }
 
-/* Logo Image */
+/* Logo Image - Shadow & Effects */
 .brand-logo {
-    max-height: 150px; /* Adjust if needed */
+    max-height: 150px;
     width: auto;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6)); /* Soft glow for dimensionality */
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Navigation Links - Keep Right */
+/* Hover Effect - Slight Lift */
+.brand-logo:hover {
+    transform: translateX(-50%) scale(1.05); /* Slight size increase */
+    filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.8)); /* More prominent shadow */
+    cursor: pointer;
+}
+
+/* Click Effect - Press Down */
+.brand-logo:active {
+    transform: translateX(-50%) scale(0.95); /* Shrinks slightly */
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5)); /* Softer shadow */
+}
+
+/* Navigation Links */
 .nav-links {
     position: absolute;
-    right: 30px; /* Aligns navigation to the right */
+    right: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links a {
