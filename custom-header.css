@@ -2,7 +2,7 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Ensures the logo is centered */
+    justify-content: center; /* Ensures centering */
     padding: 15px 30px;
     background: #1A1A1A; /* Metallic Black */
     border-top: 3px solid #8C6239; /* Metallic Bronze */
@@ -12,15 +12,15 @@
     width: 100%;
 }
 
-/* Logo Container - Fully Centered */
+/* Logo Container - Centered and Adjusted Left */
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensures it stays aligned to the page width */
+    width: 100%;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Centers exactly with page elements */
+    left: calc(50% - 20px); /* Shifted left by 1/4 inch (~20px) */
+    transform: translateX(-50%);
 }
 
 /* Logo Styling */
@@ -35,14 +35,14 @@
     box-shadow: 0px 0px 15px rgba(140, 98, 57, 0.7); /* Soft bronze glow */
 }
 
-/* Navigation Links */
+/* Navigation Links - Adjusted Left */
 .nav-links {
     display: flex;
-    justify-content: center; /* Centers navigation */
+    justify-content: center;
     align-items: center;
     gap: 30px;
     position: absolute;
-    right: 50px; /* Adjusted so it doesn’t push too far right */
+    right: calc(50px - 20px); /* Shifted left by 1/4 inch (~20px) */
 }
 
 /* Navigation Link Styling */
