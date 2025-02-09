@@ -7,7 +7,7 @@ body {
     color: #2B2B2B;
 }
 
-/* Calculator and Panel Styling */
+/* Calculator Styling */
 .container, .ratio-container {
     background: linear-gradient(to bottom, #F7F4F1, #EDEAE5); /* Soft parchment gradient */
     padding: 20px;
@@ -105,15 +105,5 @@ input, select {
     background: linear-gradient(to right, #282828, #1E1E1E); /* Metallic black */
     color: white;
     padding: 12px;
-}
-
-/* Make email hyperlink metallic silver */
-.footer a {
-    color: #C0C0C0;
-    text-decoration: underline;
-    transition: color 0.3s ease-in-out;
-}
-
-.footer a:hover {
-    color: #E0E0E0;
+    border-top: 2px solid #8B6F4E; /* Metallic bronze border matching header */
 }
