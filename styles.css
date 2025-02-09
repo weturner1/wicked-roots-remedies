@@ -12,12 +12,12 @@ body {
     background: linear-gradient(to bottom, #F7F4F1, #EDEAE5); /* Soft parchment gradient */
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #2C2C2B; /* Metallic black border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     max-width: 500px;
     margin: auto;
     margin-bottom: 30px;
     color: #3e2723;
+    border: 1.8px solid #2C2C2B; /* Metallic black border */
     position: relative;
 }
 
@@ -31,7 +31,7 @@ body {
     background-size: contain;
     top: -15px;
     left: -15px;
-    opacity: 0.5;
+    opacity: 0.6;
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
@@ -40,7 +40,7 @@ button {
     background: linear-gradient(to bottom, #8B6F4E, #7A5E3A); /* Metallic bronze gradient */
     color: white;
     padding: 12px 18px;
-    border: 2px solid #2C2C2B; /* Metallic black outline */
+    border: 2.5px solid #2C2C2B; /* Metallic black outline */
     cursor: pointer;
     font-size: 1rem;
     border-radius: 6px;
@@ -53,7 +53,7 @@ button {
 /* Shimmer effect changed to metallic bronze */
 button:hover {
     background: linear-gradient(to right, #A57A5A, #8B6F4E, #A57A5A);
-    box-shadow: 0 0 8px rgba(165, 122, 90, 0.6);
+    box-shadow: 0 0 10px rgba(165, 122, 90, 0.6);
 }
 
 /* Tip Box */
@@ -61,10 +61,10 @@ button:hover {
     background: rgba(247, 244, 241, 0.95);
     padding: 12px;
     border-radius: 8px;
-    border: 1px solid #2C2C2B; /* Metallic black border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     max-width: 500px;
     margin: 30px auto 40px auto;
+    border: 1.8px solid #2C2C2B; /* Metallic black border */
     position: relative;
 }
 
@@ -78,7 +78,7 @@ button:hover {
 /* Add soft shadow effect on hover */
 .styled-table tr:hover {
     background: rgba(240, 240, 240, 0.8);
-    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
 }
 
 /* Calculator Output Text */
@@ -93,7 +93,7 @@ input, select {
     width: 85%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #282828; /* Metallic black */
+    border: 1px solid #2C2C2B; /* Metallic black */
     border-radius: 5px;
     background: #FFFFFF; /* Matches table background */
     color: #3e2723;
@@ -105,5 +105,29 @@ input, select {
     background: linear-gradient(to right, #282828, #1E1E1E); /* Metallic black */
     color: white;
     padding: 12px;
-    border-top: 2px solid #8B6F4E; /* Metallic bronze border matching header */
+    position: relative;
+    text-align: center;
+    border-top: 2.5px solid #8B6F4E; /* Metallic bronze line */
+}
+
+/* Make email hyperlink metallic silver */
+.footer a {
+    color: #C0C0C0; /* Metallic silver */
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #E0E0E0;
+}
+
+/* Footer Top Line */
+.footer::before {
+    content: "";
+    display: block;
+    height: 2.5px;
+    background: linear-gradient(to right, #8B6F4E, #A57A5A, #8B6F4E);
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
