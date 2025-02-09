@@ -19,7 +19,7 @@
     align-items: center;
     width: 100%;
     position: absolute;
-    left: calc(50% - 20px); /* Shifted left by 1/4 inch (~20px) */
+    left: calc(50% - 40px); /* Shifted left by 40px */
     transform: translateX(-50%);
 }
 
@@ -42,7 +42,7 @@
     align-items: center;
     gap: 30px;
     position: absolute;
-    right: calc(50px - 20px); /* Shifted left by 1/4 inch (~20px) */
+    right: calc(50px - 40px); /* Shifted left by 40px */
 }
 
 /* Navigation Link Styling */
