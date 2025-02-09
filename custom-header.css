@@ -2,7 +2,7 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Ensures full centering */
     padding: 15px 30px;
     background: #1a1a1a; /* Metallic Black */
     border-top: 2px solid #8B6F4E; /* Metallic Bronze */
@@ -11,17 +11,16 @@
     height: 100px; /* Reduced height for a tighter fit */
 }
 
-/* Logo Styling - RESTORED TO ORIGINAL PLACEMENT */
+/* Logo Container - Centered */
 .logo-container {
     display: flex;
+    justify-content: center; /* Centers the logo */
     align-items: center;
-    justify-content: flex-start; /* Keeps logo in its correct position */
-    flex: 1;
+    flex-grow: 1; /* Allows proper spacing */
 }
 
 .brand-logo {
     max-height: 130px; /* Increased size by 35% */
-    margin-left: 40px; /* Ensures correct placement */
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6)); /* Adds depth */
 }
 
@@ -29,7 +28,8 @@
 .nav-links {
     display: flex;
     align-items: center;
-    text-align: right;
+    justify-content: flex-end; /* Keeps links to the right */
+    flex-grow: 1; /* Ensures equal spacing */
 }
 
 .nav-links a {
